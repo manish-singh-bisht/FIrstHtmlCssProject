@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .clip{
     /* clip-path: polygon(66.00% 6.00%,98.00% 61.00%,97.9% 89.00%,96.00% 92.00%,93.00% 93.00%,42.00% 61.00%); */
     clip-path: polygon(84.00% 71.00%,96.00% 65.00%,96.00% 92.00%,94.00% 93.00%,93.00% 93.00%,75.00% 71.00%);
@@ -21,3 +22,22 @@
     width: 450px;
      
 }
+@keyframes animate {
+    0%{
+    content: "developer" ;opacity: 0; transform: translateY(0%);}
+    20%{
+    content: "data scientist";transform: translateX(10%);}
+    40%{
+    content: "system admin";}
+    60%{
+    content: "mobile developer";}
+    80%{
+    content: "game developer";}
+}
+  
+#moving::before {
+            content: "developer";
+            animation: animate infinite 10s;
+            
+        }
+        
