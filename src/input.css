@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.clip{
+    /* clip-path: polygon(66.00% 6.00%,98.00% 61.00%,97.9% 89.00%,96.00% 92.00%,93.00% 93.00%,42.00% 61.00%); */
+    clip-path: polygon(84.00% 71.00%,96.00% 65.00%,96.00% 92.00%,94.00% 93.00%,93.00% 93.00%,75.00% 71.00%);
+    height: 320px;
+    background-color:#FEE3CD ;
+    z-index: 10;
+    width: 450px;
+     
+}
+
+.clip2{
+    /* clip-path: polygon(66.00% 6.00%,98.00% 61.00%,97.9% 89.00%,96.00% 92.00%,93.00% 93.00%,42.00% 61.00%); */
+    clip-path: polygon(15.00% 72.00%,1.8% 64.00%,2.00% 93.00%,5.00% 93.00%,7.00% 90.00%,18.00% 74.00%);
+    height: 320px;
+    background-color:#CDE9FE ;
+    z-index: 10;
+    width: 450px;
+     
+}

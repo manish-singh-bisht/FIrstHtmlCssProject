@@ -665,6 +665,22 @@ video {
   margin-left: 44%;
 }
 
+.ml-\[238\.5px\] {
+  margin-left: 238.5px;
+}
+
+.mt-\[-260px\] {
+  margin-top: -260px;
+}
+
+.ml-\[698px\] {
+  margin-left: 698px;
+}
+
+.mt-\[-320px\] {
+  margin-top: -320px;
+}
+
 .flex {
   display: flex;
 }
@@ -937,6 +953,26 @@ video {
 .drop-shadow-sm {
   --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.clip{
+  /* clip-path: polygon(66.00% 6.00%,98.00% 61.00%,97.9% 89.00%,96.00% 92.00%,93.00% 93.00%,42.00% 61.00%); */
+  -webkit-clip-path: polygon(84.00% 71.00%,96.00% 65.00%,96.00% 92.00%,94.00% 93.00%,93.00% 93.00%,75.00% 71.00%);
+          clip-path: polygon(84.00% 71.00%,96.00% 65.00%,96.00% 92.00%,94.00% 93.00%,93.00% 93.00%,75.00% 71.00%);
+  height: 320px;
+  background-color:#FEE3CD ;
+  z-index: 10;
+  width: 450px;
+}
+
+.clip2{
+  /* clip-path: polygon(66.00% 6.00%,98.00% 61.00%,97.9% 89.00%,96.00% 92.00%,93.00% 93.00%,42.00% 61.00%); */
+  -webkit-clip-path: polygon(15.00% 72.00%,1.8% 64.00%,2.00% 93.00%,5.00% 93.00%,7.00% 90.00%,18.00% 74.00%);
+          clip-path: polygon(15.00% 72.00%,1.8% 64.00%,2.00% 93.00%,5.00% 93.00%,7.00% 90.00%,18.00% 74.00%);
+  height: 320px;
+  background-color:#CDE9FE ;
+  z-index: 10;
+  width: 450px;
 }
 
 .focus-within\:ring-4:focus-within {
