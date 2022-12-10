@@ -1,43 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-.clip{
-    /* clip-path: polygon(66.00% 6.00%,98.00% 61.00%,97.9% 89.00%,96.00% 92.00%,93.00% 93.00%,42.00% 61.00%); */
-    clip-path: polygon(84.00% 71.00%,96.00% 65.00%,96.00% 92.00%,94.00% 93.00%,93.00% 93.00%,75.00% 71.00%);
-    height: 320px;
-    background-color:#FEE3CD ;
-    z-index: 10;
-    width: 450px;
-     
+.clipm{
+  clip-path:path('M 1,4 L 1376,4 L 1376,1057 C 913,872 220,951 1,1057 L 1,4 Z');
 }
 
-.clip2{
-    /* clip-path: polygon(66.00% 6.00%,98.00% 61.00%,97.9% 89.00%,96.00% 92.00%,93.00% 93.00%,42.00% 61.00%); */
-    clip-path: polygon(15.00% 72.00%,1.8% 64.00%,2.00% 93.00%,5.00% 93.00%,7.00% 90.00%,18.00% 74.00%);
-    height: 320px;
-    background-color:#CDE9FE ;
-    z-index: 10;
-    width: 450px;
-     
+.clip {
+ 
+  clip-path: polygon(84% 71%, 96% 65%, 96% 92%, 94% 93%, 93% 93%, 75% 71%);
+  height: 320px;
+  background-color: #fee3cd;
+  z-index: 10;
+  width: 450px;
 }
-@keyframes animate {
-    0%{
-    content: "developer" ;opacity: 0; transform: translateY(0%);}
-    20%{
-    content: "data scientist";transform: translateX(10%);}
-    40%{
-    content: "system admin";}
-    60%{
-    content: "mobile developer";}
-    80%{
-    content: "game developer";}
-}
+.clip2 {
   
-#moving::before {
-            content: "developer";
-            animation: animate infinite 10s;
-            
-        }
-        
+  clip-path: polygon(15% 72%, 1.8% 64%, 2% 93%, 5% 93%, 7% 90%, 18% 74%);
+  height: 320px;
+  background-color: #cde9fe;
+  z-index: 10;
+  width: 450px;
+}

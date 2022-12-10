@@ -604,9 +604,9 @@ video {
   margin-right: auto;
 }
 
-.mx-\[260px\] {
-  margin-left: 260px;
-  margin-right: 260px;
+.mx-\[259px\] {
+  margin-left: 259px;
+  margin-right: 259px;
 }
 
 .mt-1 {
@@ -733,8 +733,8 @@ video {
   height: 60px;
 }
 
-.h-\[1375px\] {
-  height: 1375px;
+.h-\[1050px\] {
+  height: 1050px;
 }
 
 .h-\[250px\] {
@@ -825,6 +825,10 @@ video {
   width: 71px;
 }
 
+.w-\[215px\] {
+  width: 215px;
+}
+
 .w-\[200px\] {
   width: 200px;
 }
@@ -853,8 +857,8 @@ video {
   gap: 2.25rem;
 }
 
-.gap-11 {
-  gap: 2.75rem;
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .overflow-auto {
@@ -1008,6 +1012,10 @@ video {
   font-size: 55px;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .text-\[20px\] {
   font-size: 20px;
 }
@@ -1058,54 +1066,27 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.clip{
-  /* clip-path: polygon(66.00% 6.00%,98.00% 61.00%,97.9% 89.00%,96.00% 92.00%,93.00% 93.00%,42.00% 61.00%); */
-  -webkit-clip-path: polygon(84.00% 71.00%,96.00% 65.00%,96.00% 92.00%,94.00% 93.00%,93.00% 93.00%,75.00% 71.00%);
-          clip-path: polygon(84.00% 71.00%,96.00% 65.00%,96.00% 92.00%,94.00% 93.00%,93.00% 93.00%,75.00% 71.00%);
+.clipm{
+  -webkit-clip-path:path('M 1,4 L 1376,4 L 1376,1057 C 913,872 220,951 1,1057 L 1,4 Z');
+          clip-path:path('M 1,4 L 1376,4 L 1376,1057 C 913,872 220,951 1,1057 L 1,4 Z');
+}
+
+.clip {
+  -webkit-clip-path: polygon(84% 71%, 96% 65%, 96% 92%, 94% 93%, 93% 93%, 75% 71%);
+          clip-path: polygon(84% 71%, 96% 65%, 96% 92%, 94% 93%, 93% 93%, 75% 71%);
   height: 320px;
-  background-color:#FEE3CD ;
+  background-color: #fee3cd;
   z-index: 10;
   width: 450px;
 }
 
-.clip2{
-  /* clip-path: polygon(66.00% 6.00%,98.00% 61.00%,97.9% 89.00%,96.00% 92.00%,93.00% 93.00%,42.00% 61.00%); */
-  -webkit-clip-path: polygon(15.00% 72.00%,1.8% 64.00%,2.00% 93.00%,5.00% 93.00%,7.00% 90.00%,18.00% 74.00%);
-          clip-path: polygon(15.00% 72.00%,1.8% 64.00%,2.00% 93.00%,5.00% 93.00%,7.00% 90.00%,18.00% 74.00%);
+.clip2 {
+  -webkit-clip-path: polygon(15% 72%, 1.8% 64%, 2% 93%, 5% 93%, 7% 90%, 18% 74%);
+          clip-path: polygon(15% 72%, 1.8% 64%, 2% 93%, 5% 93%, 7% 90%, 18% 74%);
   height: 320px;
-  background-color:#CDE9FE ;
+  background-color: #cde9fe;
   z-index: 10;
   width: 450px;
-}
-
-@keyframes animate {
-  0%{
-    content: "developer" ;
-    opacity: 0;
-    transform: translateY(0%);
-  }
-
-  20%{
-    content: "data scientist";
-    transform: translateX(10%);
-  }
-
-  40%{
-    content: "system admin";
-  }
-
-  60%{
-    content: "mobile developer";
-  }
-
-  80%{
-    content: "game developer";
-  }
-}
-
-#moving::before {
-  content: "developer";
-  animation: animate infinite 10s;
 }
 
 .focus-within\:ring-4:focus-within {
@@ -1142,4 +1123,3 @@ video {
   --tw-text-opacity: 1;
   color: rgb(194 65 12 / var(--tw-text-opacity));
 }
-        
