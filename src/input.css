@@ -1,11 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.clipm{
+.created-clipm{
   clip-path:path('M 1,4 L 1376,4 L 1376,1057 C 913,872 220,951 1,1057 L 1,4 Z');
 }
 
-.clip {
+.created-clip1 {
  
   clip-path: polygon(84% 71%, 96% 65%, 96% 92%, 94% 93%, 93% 93%, 75% 71%);
   height: 320px;
@@ -13,7 +13,7 @@
   z-index: 10;
   width: 450px;
 }
-.clip2 {
+.created-clip2 {
   
   clip-path: polygon(15% 72%, 1.8% 64%, 2% 93%, 5% 93%, 7% 90%, 18% 74%);
   height: 320px;
@@ -21,3 +21,42 @@
   z-index: 10;
   width: 450px;
 }
+
+#animation span{
+  position: absolute;
+  
+ opacity: 1;
+  
+  border:10px solid red;
+  animation: sliding 12s var(--d) linear infinite;}
+
+  @keyframes sliding {
+
+    10%{ transform: translateY(90px); opacity: 1;}
+    40%{ transform: translateY(90px); opacity: 1;}
+    60%{ transform: translateY(90px); opacity: 1;}
+    
+  }
+
+  .slider{
+    animation:bright 4s var(--d) linear infinite ;
+
+  }
+   @keyframes bright {
+
+    20%{ background-color:ghostwhite;}
+    40%{ background-color:ghostwhite;}
+    60%{ background-color:ghostwhite;}
+    60%{ background-color:ghostwhite;}
+    
+  }
+
+  
+
+ 
+    
+  
+
+  
+  
+  
