@@ -34,7 +34,8 @@
   @keyframes sliding {
 
     10%{ transform: translateY(90px); opacity: 1;}
-    40%{ transform: translateY(90px); opacity: 1;}
+    20%{opacity: 0;}
+    40%{ transform: translateY(90px); opacity: 0;}
     60%{ transform: translateY(90px); opacity: 1;}
     
   }
