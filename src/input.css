@@ -1,12 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.created-clipm{
-  clip-path:path('M 1,4 L 1376,4 L 1376,1057 C 913,872 220,951 1,1057 L 1,4 Z');
+.created-clipm {
+  clip-path: path(
+    "M 1,4 L 1376,4 L 1376,1057 C 913,872 220,951 1,1057 L 1,4 Z"
+  );
 }
 
 .created-clip1 {
- 
   clip-path: polygon(84% 71%, 96% 65%, 96% 92%, 94% 93%, 93% 93%, 75% 71%);
   height: 320px;
   background-color: #fee3cd;
@@ -14,7 +15,6 @@
   width: 450px;
 }
 .created-clip2 {
-  
   clip-path: polygon(15% 72%, 1.8% 64%, 2% 93%, 5% 93%, 7% 90%, 18% 74%);
   height: 320px;
   background-color: #cde9fe;
@@ -22,43 +22,47 @@
   width: 450px;
 }
 
-
-#animation span{
+#animation span {
   position: absolute;
-  
- opacity: 1;
-  
-  border:10px solid red;
-  animation: sliding 12s var(--d) linear infinite;}
 
-  @keyframes sliding {
+  opacity: 1;
 
-    10%{ transform: translateY(90px); opacity: 1;}
-    20%{opacity: 0;}
-    40%{ transform: translateY(90px); opacity: 0;}
-    60%{ transform: translateY(90px); opacity: 1;}
-    
+  border: 10px solid red;
+  animation: sliding 12s var(--d) linear infinite;
+}
+
+@keyframes sliding {
+  10% {
+    transform: translateY(90px);
+    opacity: 1;
   }
-
-  .slider{
-    animation:bright 4s var(--d) linear infinite ;
-
+  20% {
+    opacity: 0;
   }
-   @keyframes bright {
-
-    20%{ background-color:ghostwhite;}
-    40%{ background-color:ghostwhite;}
-    60%{ background-color:ghostwhite;}
-    60%{ background-color:ghostwhite;}
-    
+  40% {
+    transform: translateY(90px);
+    opacity: 0;
   }
+  60% {
+    transform: translateY(90px);
+    opacity: 1;
+  }
+}
 
-  
-
- 
-    
-  
-
-  
-  
-  
+.slider {
+  animation: bright 4s var(--d) linear infinite;
+}
+@keyframes bright {
+  20% {
+    background-color: ghostwhite;
+  }
+  40% {
+    background-color: ghostwhite;
+  }
+  60% {
+    background-color: ghostwhite;
+  }
+  60% {
+    background-color: ghostwhite;
+  }
+}
