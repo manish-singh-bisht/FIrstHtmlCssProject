@@ -1,143 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stack Overflow-Where Developers Learn, Share, & Build Careers</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="bg-[#F8F9F9]">
-    <header class="fixed top-0 bg-white z-40 w-[100%]">
-        <div class="flex border-[3px] border-t-orange-500    px-28 w-full max-h-[52px] drop-shadow-sm" >
-            <a href=""  class=" hover:bg-slate-300">
-                <svg  xmlns="http://www.w3.org/2000/svg" width="30" height="45" viewBox="0 0 30 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="7" y1="12" x2="21" y2="12"></line><line x1="7" y1="6" x2="21" y2="6"></line><line x1="7" y1="18" x2="21" y2="18"></line></svg>
-            </a>
-            <a href=""  class="hover:bg-slate-300"><img src="images/logo1.png" alt="logo of stackoverflow" class="mx-3 cover h-[38px] mt-1"></a>
-            <ul class="flex gap-1 my-3 ">
-                <li><a href=""  class="px-2 text-sm py-1 text-center hover:rounded-full hover:bg-slate-300 ">About</a></li>
-                <li><a href=""  class="px-2 text-sm py-1 text-center hover:rounded-full hover:bg-slate-300 ">Products</a></li>
-                <li><a href=""  class="px-2 text-sm py-1 text-center hover:rounded-full hover:bg-slate-300 ">For Teams</a></li>
-                <searchbar>
-                    <form action="" class="flex relative ">
-                        <div class="border-2 border-gray-400  mt-[-7px] rounded-sm  focus-within:ring-4">
-                            <label for="search">
-                                <svg class=" bg-transparent active:shadow-3xl h-10 px-1 mt-[-3px]  absolute" xmlns="http://www.w3.org/2000/svg" width="29" height="22" viewBox="0 0 24 24" fill="none" stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="9" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                            </label>
-                            <input type="text" name="search" placeholder="Search..." id="search"  class=" bg-transparent py-4 ml-7 h-8   outline-none  w-[615px]  ">
-                        </div>
-                    </form>
-                </searchbar>
-                <a href="" class="mt-[-7px]"><Button class="pb-1 border-2 h-8 px-1 mx-1 border-gray-400 rounded-[3px] bg-blue-200 hover:bg-blue-400 overflow-auto" >Log in</Button></a>
-                <a href="" class="mt-[-7px]"><Button class="pb-1 border-2 h-8 mt-[-7px] px-1 mx-1 border-gray-400 rounded-[3px] bg-blue-200 hover:bg-blue-400 overflow-auto" >Sign up</Button></a>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <div class="left-auto right-auto h-[1170px]  px-[48px] ">
-            <div class="flex justify-between">
-                <div class="blue h-[60px] w-[60px] bg-blue-800 ml-[-30px] mt-[42px] z-0 rounded-lg"></div>
-                <div class="blueright h-[60px] w-[60px] bg-blue-400 mt-[42px] mr-[130px] "></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stack Overflow-Where Developers Learn, Share, & Build Careers</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="bg-[#F8F9F9]">
+        <header class="fixed top-0 z-40 w-[100%] bg-white">
+            <div class="flex max-h-[52px] w-full border-[3px] border-t-orange-500 px-28 drop-shadow-sm">
+                <a href="" class="hover:bg-slate-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="45" viewBox="0 0 30 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                        <line x1="7" y1="12" x2="21" y2="12"></line>
+                        <line x1="7" y1="6" x2="21" y2="6"></line>
+                        <line x1="7" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </a>
+                <a href="" class="hover:bg-slate-300"><img src="images/logo1.png" alt="logo of stackoverflow" class="cover mx-3 mt-1 h-[38px]" /></a>
+                <ul class="my-3 flex gap-1">
+                    <li>
+                        <a href="" class="px-2 py-1 text-center text-sm hover:rounded-full hover:bg-slate-300">About</a>
+                    </li>
+                    <li>
+                        <a href="" class="px-2 py-1 text-center text-sm hover:rounded-full hover:bg-slate-300">Products</a>
+                    </li>
+                    <li>
+                        <a href="" class="px-2 py-1 text-center text-sm hover:rounded-full hover:bg-slate-300">For Teams</a>
+                    </li>
+                    <searchbar>
+                        <form action="" class="relative flex">
+                            <div class="mt-[-7px] rounded-sm border-2 border-gray-400 focus-within:ring-4">
+                                <label for="search">
+                                    <svg
+                                        class="active:shadow-3xl absolute mt-[-3px] h-10 bg-transparent px-1"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="29"
+                                        height="22"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="grey"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="feather feather-search">
+                                        <circle cx="9" cy="11" r="7"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </label>
+                                <input type="text" name="search" placeholder="Search..." id="search" class="ml-7 h-8 w-[615px] bg-transparent py-4 outline-none" />
+                            </div>
+                        </form>
+                    </searchbar>
+                    <a href="" class="mt-[-7px]"><button class="mx-1 h-8 overflow-auto rounded-[3px] border-2 border-gray-400 bg-blue-200 px-1 pb-1 hover:bg-blue-400">Log in</button></a>
+                    <a href="" class="mt-[-7px]"><button class="mx-1 mt-[-7px] h-8 overflow-auto rounded-[3px] border-2 border-gray-400 bg-blue-200 px-1 pb-1 hover:bg-blue-400">Sign up</button></a>
+                </ul>
             </div>
-            <div class="created-clipm bg-gradient-to-b from-black to-gray-600  h-[1050px] w-[1372px] absolute mt-[-10px] rounded-2xl text-white" >
-                <div class="image absolute ml-[77px] mt-[250px] z-0 ">
-                    <img src="images/Graylines.png" alt="" class="">
-                 </div>
-                <div class="image absolute  ml-[1107px] mt-[25px] z-0 ">
-                    <img src="images/Graylines.png" alt="" class="">
+        </header>
+        <main>
+            <div class="left-auto right-auto h-[1170px] px-[48px]">
+                <div class="flex justify-between">
+                    <div class="blue z-0 ml-[-30px] mt-[42px] h-[60px] w-[60px] rounded-lg bg-blue-800"></div>
+                    <div class="blueright mt-[42px] mr-[130px] h-[60px] w-[60px] bg-blue-400"></div>
                 </div>
-                <div class="absolute top-[5%] left-[5%]">
-                    <img src="images/yellowbox.png" alt="yellow" class=" w-[80px]">
-                </div>
-                <div class="absolute top-[2%] right-[1%] ">
-                    <img src="images/bluebox.png" alt="yellow" class=" w-[50px]">
-                </div>
-                <div class="Contents flex gap-9 ml-[220px] mt-[50px] ">
-                    <div class=" OrangeBox bg-[#FEE3CD]  rounded-lg h-[250px]  w-[450px] z-10">
-                        <img src="images/searchOrange.png"   alt="icon search" class="h-[51px] ml-[42%] mt-[5%] w-[56px] ">
-                        <div class="text mx-[16%] ">
-                            <p class="text-black text-center  mt-[4%] mb-4 text-[18px]">Find the best answer to your technical question, help others answer theirs</p>
-                        </div>
-                        <div class="button flex justify-center items-center ">
-                                <a href=""  class=" w-[210px]  "><button class=" button hover:bg-orange-700 h-[43px] rounded-md w-[210px] mb-3 bg-orange-500 font-medium">Join the community
-                                </button></a>
-                        </div>
-                        <p class="text-black text-center font-light text-sm">or <a href=""><span class="hover:text-orange-700 "><ins>search content</ins></span></a> </p>
+                <div class="created-clipm absolute mt-[-10px] h-[1050px] w-[1372px] rounded-2xl bg-gradient-to-b from-black to-gray-600 text-white">
+                    <div class="image absolute z-0 ml-[77px] mt-[250px]">
+                        <img src="images/Graylines.png" alt="" class="" />
                     </div>
-                    <div class="BlueBox bg-[#CDE9FE]  rounded-lg h-[250px]  w-[450px] z-10">
-                        <img src="images/lockBlue.png" alt="icon lock" class=" ml-[44%] mt-[5%] h-[50px] w-[70px]">
-                        <div class="text mx-[16%] ">
-                            <p class="text-black text-center  mt-[4%] mb-4 text-[18px]">Want a secure, private space for your technical knowledge?</p>
+                    <div class="image absolute z-0 ml-[1107px] mt-[25px]">
+                        <img src="images/Graylines.png" alt="" class="" />
+                    </div>
+                    <div class="absolute top-[5%] left-[5%]">
+                        <img src="images/yellowbox.png" alt="yellow" class="w-[80px]" />
+                    </div>
+                    <div class="absolute top-[2%] right-[1%]">
+                        <img src="images/bluebox.png" alt="yellow" class="w-[50px]" />
+                    </div>
+                    <div class="Contents ml-[220px] mt-[50px] flex gap-9">
+                        <div class="OrangeBox z-10 h-[250px] w-[450px] rounded-lg bg-[#FEE3CD]">
+                            <img src="images/searchOrange.png" alt="icon search" class="ml-[42%] mt-[5%] h-[51px] w-[56px]" />
+                            <div class="text mx-[16%]">
+                                <p class="mt-[4%] mb-4 text-center text-[18px] text-black">Find the best answer to your technical question, help others answer theirs</p>
+                            </div>
+                            <div class="button flex items-center justify-center">
+                                <a href="" class="w-[210px]"><button class="button mb-3 h-[43px] w-[210px] rounded-md bg-orange-500 font-medium hover:bg-orange-700">Join the community</button></a>
+                            </div>
+                            <p class="text-center text-sm font-light text-black">
+                                or
+                                <a href=""
+                                    ><span class="hover:text-orange-700"><ins>search content</ins></span></a
+                                >
+                            </p>
                         </div>
-                        <div class="button flex justify-center items-center">
-                            <a href=""  class=" w-[210px]  "><button class=" button hover:bg-blue-700  h-[43px] rounded-md w-[210px] mb-3 bg-blue-500 font-medium">Discover Teams
-                            </button></a>
+                        <div class="BlueBox z-10 h-[250px] w-[450px] rounded-lg bg-[#CDE9FE]">
+                            <img src="images/lockBlue.png" alt="icon lock" class="ml-[44%] mt-[5%] h-[50px] w-[70px]" />
+                            <div class="text mx-[16%]">
+                                <p class="mt-[4%] mb-4 text-center text-[18px] text-black">Want a secure, private space for your technical knowledge?</p>
+                            </div>
+                            <div class="button flex items-center justify-center">
+                                <a href="" class="w-[210px]"><button class="button mb-3 h-[43px] w-[210px] rounded-md bg-blue-500 font-medium hover:bg-blue-700">Discover Teams</button></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="created-clip1 border-2 ml-[238.5px] mt-[-260px]" ></div>
-                <div class="created-clip2 border-2 ml-[697.5px] mt-[-320px]" ></div>
-                <div id="animation" class="  mt-8   h-[177px] mx-[330px] text-center ">
-                     <p class="text-[55px] border-2">Every 
-                     <span class="words w-[90px] text-[55px] ">
-                        <span style="--d:0s">>gdfg1</span>
-                        <span style="--d:4s">gdfg2</span>
-                        <span style="--d:8s">gdfg3</span>
-                     </span> &nbsp;&nbsp;&nbsp;&nbsp;has a <br> tab open to Stack Overflow</p>
-                </div>
-                <div class=" rounded-3xl h-[10px] bg-gray-500 w-[71px] my-[70px] mx-auto"> </div>
-                <div class="flex mx-[259px] gap-10 list-none text-center">
-                    <li class=" h-[86px] w-[215px] text-gray-400 text-[14px]"><span class="font-extrabold text-white text-[20px] "> 100+ million</span> <br>monthly visitors to Stack Overflow & Stack Exchange
-                    </li>
-                    <li class="h-[86px] w-[200px] text-gray-400 text-[14px]"><span class="font-extrabold text-white text-[20px]">45.1+ billion</span><br> Times a developer got help since 2008
-                    </li>
-                    <li class=" h-[86px] w-[200px] text-gray-400 text-[14px]"><span class="font-extrabold text-white text-[20px]">191% ROI</span><br> from companies using Stack Overflow for Teams
-                    </li>
-                    <li class=" h-[86px] w-[200px] text-gray-400 text-[14px]"><span class="font-extrabold text-white text-[20px]">5,000+</span><br> Stack Overflow for Teams instances active every day
-                    </li>
+                    <div class="created-clip1 ml-[238.5px] mt-[-260px] border-2"></div>
+                    <div class="created-clip2 ml-[697.5px] mt-[-320px] border-2"></div>
+                    <div id="animation" class="mx-[330px] mt-8 h-[177px] text-center">
+                        <p class="border-2 text-[55px]">
+                            Every
+                            <span class="words w-[90px] text-[55px]">
+                                <span style="--d: 0s">>gdfg1</span>
+                                <span style="--d: 4s">gdfg2</span>
+                                <span style="--d: 8s">gdfg3</span>
+                            </span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;has a <br />
+                            tab open to Stack Overflow
+                        </p>
+                    </div>
+                    <div class="my-[70px] mx-auto h-[10px] w-[71px] rounded-3xl bg-gray-500"></div>
+                    <div class="mx-[259px] flex list-none gap-10 text-center">
+                        <li class="h-[86px] w-[215px] text-[14px] text-gray-400">
+                            <span class="text-[20px] font-extrabold text-white"> 100+ million</span>
+                            <br />monthly visitors to Stack Overflow & Stack Exchange
+                        </li>
+                        <li class="h-[86px] w-[200px] text-[14px] text-gray-400">
+                            <span class="text-[20px] font-extrabold text-white">45.1+ billion</span><br />
+                            Times a developer got help since 2008
+                        </li>
+                        <li class="h-[86px] w-[200px] text-[14px] text-gray-400">
+                            <span class="text-[20px] font-extrabold text-white">191% ROI</span><br />
+                            from companies using Stack Overflow for Teams
+                        </li>
+                        <li class="h-[86px] w-[200px] text-[14px] text-gray-400">
+                            <span class="text-[20px] font-extrabold text-white">5,000+</span><br />
+                            Stack Overflow for Teams instances active every day
+                        </li>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class=" h-[870px]">
-            <div class=" absolute  flex  mt-[-200px] ml-[200px] gap-7">
-                <div class="h-[930px] w-[530px] bg-gradient-to-b from-white to bg-[#FEE3CD]   rounded-md ">
-                    <a href=" "><img src="images/logo1.png" alt="logo" class="px-[146px] my-12 "></a>
-                    <img src="images/chatsIMG2.png" alt="image">
-                    <div class="font-bold text-[30px] text-center mt-7">
-                        A public platform building the <br> definitive collection of coding <br> questions & answers
+            <div class="h-[870px]">
+                <div class="absolute mt-[-200px] ml-[200px] flex gap-7">
+                    <div class="to h-[930px] w-[530px] rounded-md bg-[#FEE3CD] bg-gradient-to-b from-white">
+                        <a href=" "><img src="images/logo1.png" alt="logo" class="my-12 px-[146px]" /></a>
+                        <img src="images/chatsIMG2.png" alt="image" />
+                        <div class="mt-7 text-center text-[30px] font-bold">
+                            A public platform building the <br />
+                            definitive collection of coding <br />
+                            questions & answers
+                        </div>
+                        <div class="mt-4 text-center text-[18px] text-gray-600">
+                            A community-based space to find and contribute <br />
+                            answers to technical challenges, and one of the most <br />
+                            popular websites in the world.
+                        </div>
+                        <div class="button mt-8 flex items-center justify-center text-white">
+                            <a href="" class="w-[210px]"><button class="button mb-3 h-[43px] w-[210px] rounded-md bg-orange-500 font-medium hover:bg-orange-700">Join the community</button></a>
+                        </div>
+                        <p class="text-center text-sm font-light text-gray-500">
+                            or
+                            <a href=""
+                                ><span class="hover:text-orange-700"><ins>search content</ins></span></a
+                            >
+                        </p>
                     </div>
-                    <div class=" text-[18px] text-center mt-4 text-gray-600 ">
-                        A community-based space to find and contribute <br> answers to technical challenges, and one of the most <br> popular websites in the world.
-                    </div>
-                    <div class="button flex justify-center items-center mt-8 text-white">
-                        <a href=""  class=" w-[210px]  "><button class=" button hover:bg-orange-700 h-[43px] rounded-md w-[210px] mb-3 bg-orange-500 font-medium">Join the community </button></a>
-                    </div>
-                    <p class=" text-center text-gray-500 font-light text-sm">or <a href=""><span class="hover:text-orange-700 "><ins>search content</ins></span></a> </p>
-                </div>
-                <div class="h-[930px] w-[530px] rounded-md bbg-gradient-to-b from-white to bg-[#daebf8]">
-                    <a href=""><div class=" w-full h-5 my-12 flex ">
-                        <img src="images/logo2.png" alt="logo 2" class="h-[55px] pl-[149px]">
-                        <p class="h-[55px]  w-full ml-[-5] pt-3"><span class="text-gray-500 text-2xl ">| &nbsp;</span> <span class="font-bold text-2xl ">FOR TEAMS</span></p>
-                    </div></a>
-                    <div class="mt-[68px]">
-                        <img src="images/chatsIMG1.png" alt="" >
-                    </div>
-                    <div class="font-bold text-[30px] text-center mt-7">
-                        A private collaboration & <br> knowledge sharing SaaS <br> platform for companies
-                    </div>
-                    <div class=" text-[18px] text-center mt-4 text-gray-600 ">
-                        A web-based platform to increase productivity, <br> decrease cycle times, accelerate time to market, and <br> protect institutional knowledge.
-                    </div>
-                     <div class="mt-6  flex justify-center">
-                    <span class="  h-10 select-none">____________</span>
-                    <p class=" text-[12px] m-[10px] ">Get started</p>
-                    <span class="  h-10 select-none">____________</span>
-                    </div>
-                    <div class="button flex justify-center   text-white gap-4">
-                        <a href=""  class=" w-[220px]  ">
-                            <button class=" flex button hover:bg-blue-700 h-[43px] rounded-md px-2 pt-2 w-[220px] mb-3 bg-blue-500 font-medium">For large organizations 
-                            <svg class="h-6 w-8" style="fill:#fcfcfc;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 176"><path d="M155.706,176c-0.001,0-0.003,0-0.005,0l-65.411-0.125H20.294c-1.381,0-2.5-1.119-2.5-2.5V60.904
+                    <div class="bbg-gradient-to-b to h-[930px] w-[530px] rounded-md bg-[#daebf8] from-white">
+                        <a href=""
+                            ><div class="my-12 flex h-5 w-full">
+                                <img src="images/logo2.png" alt="logo 2" class="h-[55px] pl-[149px]" />
+                                <p class="ml-[-5] h-[55px] w-full pt-3">
+                                    <span class="text-2xl text-gray-500">| &nbsp;</span>
+                                    <span class="text-2xl font-bold">FOR TEAMS</span>
+                                </p>
+                            </div></a
+                        >
+                        <div class="mt-[68px]">
+                            <img src="images/chatsIMG1.png" alt="" />
+                        </div>
+                        <div class="mt-7 text-center text-[30px] font-bold">
+                            A private collaboration & <br />
+                            knowledge sharing SaaS <br />
+                            platform for companies
+                        </div>
+                        <div class="mt-4 text-center text-[18px] text-gray-600">
+                            A web-based platform to increase productivity, <br />
+                            decrease cycle times, accelerate time to market, and <br />
+                            protect institutional knowledge.
+                        </div>
+                        <div class="mt-6 flex justify-center">
+                            <span class="h-10 select-none">____________</span>
+                            <p class="m-[10px] text-[12px]">Get started</p>
+                            <span class="h-10 select-none">____________</span>
+                        </div>
+                        <div class="button flex justify-center gap-4 text-white">
+                            <a href="" class="w-[220px]">
+                                <button class="button mb-3 flex h-[43px] w-[220px] rounded-md bg-blue-500 px-2 pt-2 font-medium hover:bg-blue-700">
+                                    For large organizations
+                                    <svg class="h-6 w-8" style="fill: #fcfcfc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 176">
+                                        <path
+                                            d="M155.706,176c-0.001,0-0.003,0-0.005,0l-65.411-0.125H20.294c-1.381,0-2.5-1.119-2.5-2.5V60.904
                             c0-1.381,1.119-2.5,2.5-2.5h34.911V2.5c0-1.381,1.119-2.5,2.5-2.5h98c1.381,0,2.5,1.119,2.5,2.5v171c0,0.664-0.264,1.3-0.734,1.77
                             C157.003,175.737,156.368,176,155.706,176z M92.794,170.88l60.411,0.115V5h-93v53.404h30.089c1.381,0,2.5,1.119,2.5,2.5V170.88z
                             M22.794,170.875h65V63.404h-65V170.875z M80.076,154.634H60.297c-1.381,0-2.5-1.119-2.5-2.5v-11.575c0-1.381,1.119-2.5,2.5-2.5
@@ -183,14 +243,16 @@
 	                        c-1.381,0-2.5-1.119-2.5-2.5V15.904c0-1.381,1.119-2.5,2.5-2.5h9.563c1.381,0,2.5,1.119,2.5,2.5v10.392
 	                        C113.635,27.676,112.516,28.795,111.135,28.795z M104.072,23.795h4.563v-5.392h-4.563V23.795z M83.555,28.795h-9.563
 	                        c-1.381,0-2.5-1.119-2.5-2.5V15.904c0-1.381,1.119-2.5,2.5-2.5h9.563c1.381,0,2.5,1.119,2.5,2.5v10.392
-	                        C86.055,27.676,84.936,28.795,83.555,28.795z M76.493,23.795h4.563v-5.392h-4.563V23.795z"/>
-                            </svg>
-                            </button>
+	                        C86.055,27.676,84.936,28.795,83.555,28.795z M76.493,23.795h4.563v-5.392h-4.563V23.795z" />
+                                    </svg>
+                                </button>
                             </a>
-                        <a href=""  class=" w-[180px]  ">
-                            <button class=" button flex hover:bg-blue-700 h-[43px] rounded-md w-[180px] px-3 pt-2 mb-3 bg-blue-500 font-medium">For small teams 
-                            <svg class="h-6 w-9" xmlns="http://www.w3.org/2000/svg" style="fill:#fcfcfc;"
-                                    viewBox="0 0 481.8 481.8"><path d="M481.143,368.863l-11.952-60.019c-4.74-23.763-23.338-42.327-47.099-47.027l-16.173-3.19
+                            <a href="" class="w-[180px]">
+                                <button class="button mb-3 flex h-[43px] w-[180px] rounded-md bg-blue-500 px-3 pt-2 font-medium hover:bg-blue-700">
+                                    For small teams
+                                    <svg class="h-6 w-9" xmlns="http://www.w3.org/2000/svg" style="fill: #fcfcfc" viewBox="0 0 481.8 481.8">
+                                        <path
+                                            d="M481.143,368.863l-11.952-60.019c-4.74-23.763-23.338-42.327-47.099-47.027l-16.173-3.19
                                         c-9.29-1.835-16.582-9.062-18.517-18.337l-3.087-14.849c-0.975-4.764,0.74-9.686,4.487-12.779
                                         c14.614-12.094,27.983-29.879,35.715-50.879c10.739-1.929,20.518-12.25,23.683-26.454c3.905-17.606-3.843-34.296-17.321-37.288
                                         c-0.142-0.023-0.284-0.009-0.456-0.023c-4.063-45.714-21.669-79.561-80.215-79.561c-57.57,0-75.838,33.84-80.137,79.529
@@ -198,138 +260,233 @@
                                         c7.746,21.008,21.115,38.793,35.697,50.879c3.732,3.094,5.465,8.016,4.473,12.763l-3.07,14.85
                                         c-1.922,9.283-9.211,16.518-18.519,18.353l-16.141,3.19c-21.116,4.171-38.076,19.296-44.956,39.271
                                         c20.831,11.826,36.043,32.124,40.91,56.555l10.408,52.178h162.838c10.25,0,19.983-4.599,26.486-12.535
-                                        C480.529,389.357,483.142,378.925,481.143,368.863z"/><path d="M250.578,362.368c-4.741-23.77-23.338-42.336-47.115-47.036l-16.157-3.189c-9.289-1.834-16.597-9.063-18.518-18.337l-3.086-14.857c-0.978-4.757,0.739-9.677,4.487-12.778c14.614-12.086,27.982-29.881,35.699-50.879
+                                        C480.529,389.357,483.142,378.925,481.143,368.863z" />
+                                        <path
+                                            d="M250.578,362.368c-4.741-23.77-23.338-42.336-47.115-47.036l-16.157-3.189c-9.289-1.834-16.597-9.063-18.518-18.337l-3.086-14.857c-0.978-4.757,0.739-9.677,4.487-12.778c14.614-12.086,27.982-29.881,35.699-50.879
                                         c10.755-1.929,20.533-12.252,23.698-26.454c3.905-17.605-3.843-34.298-17.321-37.297c-0.143-0.024-0.284-0.008-0.473-0.024
                                         c-4.047-45.712-21.652-79.553-80.215-79.553c-57.556,0-75.821,33.833-80.12,79.53c-0.205,0.039-0.394,0.023-0.536,0.047
                                         c-13.479,2.999-21.227,19.691-17.32,37.297c3.133,14.202,12.928,24.525,23.668,26.454c7.746,21.006,21.115,38.793,35.713,50.887
                                         c3.732,3.094,5.465,8.014,4.473,12.763l-3.072,14.85c-1.92,9.281-9.211,16.518-18.518,18.352l-16.141,3.189
                                         c-23.777,4.7-42.374,23.267-47.115,47.036l-11.951,60.02c-2,10.061,0.614,20.494,7.117,28.423
                                         c6.505,7.935,16.236,12.534,26.486,12.534h194.664c10.25,0,19.982-4.6,26.486-12.534c6.503-7.929,9.117-18.361,7.117-28.423
-                                        L250.578,362.368z"/>
-                            </svg>
-                            </button>
-                        </a>
+                                        L250.578,362.368z" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="h-11 bg-green-500 text-center">
-            <div>Thousands of organizations around the globe use Stack Overflow for Teams</div>
-            <div class="flex gap-3 justify-center mt-2">
-                <div style="--d:0s" class="slider  h-[7px] rounded-2xl w-[20px] bg-gray-400"></div>
-                <div style="--d:1s" class="slider h-[7px] rounded-2xl w-[20px] bg-gray-400"></div>
-                <div style="--d:2s" class="slider h-[7px] rounded-2xl w-[20px] bg-gray-400"></div>
-                <div style="--d:3s" class="slider h-[7px] rounded-2xl w-[20px] bg-gray-400"></div>
+            <div class="h-11 bg-green-500 text-center">
+                <div>Thousands of organizations around the globe use Stack Overflow for Teams</div>
+                <div class="mt-2 flex justify-center gap-3">
+                    <div style="--d: 0s" class="slider h-[7px] w-[20px] rounded-2xl bg-gray-400"></div>
+                    <div style="--d: 1s" class="slider h-[7px] w-[20px] rounded-2xl bg-gray-400"></div>
+                    <div style="--d: 2s" class="slider h-[7px] w-[20px] rounded-2xl bg-gray-400"></div>
+                    <div style="--d: 3s" class="slider h-[7px] w-[20px] rounded-2xl bg-gray-400"></div>
+                </div>
             </div>
-        </div>
 
-        <div class="flex mx-[130px] mt-[180px]  ">
-                <img src="images/img1.png" alt="" class="h-[290px] rounded-[8px] border-[1px] mt-[50px]  border-t-orange-500 w-[370px]">
-                <img src="images/img2.png" alt="" class="h-[400px] rounded-[8px]  border-[1px] border-t-orange-500 ml-[355px] w-[520px] absolute z-20">
-                <img src="images/img3.png" alt="" class="h-[290px] rounded-[8px]  mt-[50px] border-[1px]  border-t-orange-500 w-[370px] ml-[495px]">
-        </div>
+            <div class="mx-[130px] mt-[180px] flex">
+                <img src="images/img1.png" alt="" class="mt-[50px] h-[290px] w-[370px] rounded-[8px] border-[1px] border-t-orange-500" />
+                <img src="images/img2.png" alt="" class="absolute z-20 ml-[355px] h-[400px] w-[520px] rounded-[8px] border-[1px] border-t-orange-500" />
+                <img src="images/img3.png" alt="" class="mt-[50px] ml-[495px] h-[290px] w-[370px] rounded-[8px] border-[1px] border-t-orange-500" />
+            </div>
 
-        <div class="h-[3200px] rounded-lg  bg-gradient-to-b from-black to-gray-700 w-[1370px]  mx-14  ">
-            <div class="rounded-lg h-[290px] pt-[90px]  mx-[100px]">
-                <div class="   items flex justify-center">
-                    <img src="images/logo3.png" alt="" class="  ">
-                </div>
-                <div class="mt-7 ">
-                    <p class="text-white font-bold text-[26px] text-center " >Capture your company's knowledge and context in a <br> discoverable format to <span class="text-orange-500">unblock your team</span></p>
-                </div>
-            </div>
-            <div class=" h-[43px] flex justify-center mt-[16px]">
-                 <a href=""  class=" w-[200px] "><button class="  button  hover:bg-blue-700 h-[43px] text-white rounded-md w-[200px] bg-blue-500 font-medium">Take a tour of Teams</button></a>
-            </div>
-            <div class=" mt-20  flex justify-around h-[200px] mx-20">
-                <div class=" text-gray-400 h-[100px] text-center text-[16px]" >
-                    <span class="font-bold text-white text-[23px] "><span class="bg-green-600 text-black rounded-[900px] px-[8px] py-[0.5px]">&#10003;</span> <br> Increase productivity</span><br>If somebody somewhere has the right <br> answer, suddenly you have it too.<br> Collaborate better in a remote-first world.
-                </div>
-                <div class=" text-gray-400 h-[100px] text-center text-[16px]" >
-                    <span class="font-bold text-white text-[23px] "><span class="bg-green-600 text-black rounded-[900px] px-[8px] py-[0.5px]">&#10003;</span><br> Accelerate time to market </span><br>Shorten the time between initial idea and <br> complete product. Take delays and <br> misinformation out of the equation.
-                </div>
-                <div class=" text-gray-400 h-[100px] text-center text-[16px]" >
-                    <span class="font-bold text-white text-[23px] "><span class="bg-green-600 text-black rounded-[900px] px-[8px] py-[0.5px]">&#10003;</span><br> Protect institutional knowledge</span> <br>People come and people go, but if you <br> capture their contributions in one central <br> place, that expertise sticks around.
-                </div>
-            </div>
-            <div class="border-[0.5px] mx-[180px] border-gray-500 mt-14 w-[1000px] "></div>
-            <div class=" mt-[80px] text-white text-center py-3">
-                <span class=" font-bold text-[34px] "> Ensure your company stays on course</span><br>
-                <span class="  text-[19px] ">Here are just a few types of technologists that we help.</span>
-            </div>
-            <div class="flex  mt-32 text-white mx-[130px] gap-4">
-                <div class=" h-[240px] w-[180px] rounded-md hover:bg-gray-700 text-[20px] text-center ">
-                    <svg  class="mt-6 mx-10 mb-3 fc-gray-100 mb0 mx32 svg-spot spotRocketLg" width="96" fill="gray" height="96" viewBox="0 0 96 96"><path d="M78.2 14.36a1.73 1.73 0 0 1 1.27-1.85 37.5 37.5 0 0 1 7.66-1.5c1.09-.09 1.98.8 1.9 1.89-.21 2.6-.79 5.19-1.56 7.8a1.71 1.71 0 0 1-1.66 1.28c-4.27-.16-7.08-3.56-7.62-7.62ZM34.55 77.77l3.55-2.84-10-11-3.36 2.69c-.89.7-1 2.02-.23 2.86l7.34 8.08c.7.77 1.88.86 2.7.21ZM70.1 37.93a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm-7 7a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" opacity=".2"></path><path d="M75.5 27a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-7 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-14 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm4-7a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM27.21 70.41l2.93 3.23a3.47 3.47 0 0 0 4.74.37l2.82-2.25c.95.34 2.03.25 2.95-.33.8-.51 1.95-1.26 3.35-2.2v8.29c0 3.02 3.6 4.6 5.82 2.56l8.25-7.56a3.5 3.5 0 0 0 1.03-1.77l3.84-16.33c1.7-1.53 3.4-3.13 5.08-4.8 11.26-11.2 22.04-25.83 22.92-41.56a3.32 3.32 0 0 0-3.5-3.5c-15.71.86-30.38 11.47-41.59 22.54a161.7 161.7 0 0 0-5.19 5.4 1.5 1.5 0 0 0-.54.05l-18.35 4.83c-.74.2-1.4.63-1.87 1.25l-5.18 6.8A3.47 3.47 0 0 0 17.48 51H26c-.83 1.21-1.5 2.2-1.95 2.92a3.42 3.42 0 0 0 .38 4.2l.4.43-2.06 2.06a3.47 3.47 0 0 0-.11 4.79l2.53 2.79-.75.75a1.5 1.5 0 0 0 2.12 2.12l.65-.65ZM87.95 7.9c-.17 2.9-.7 5.78-1.53 8.61a9.21 9.21 0 0 1-5.8-2.27 7.13 7.13 0 0 1-2.6-4.88 39.23 39.23 0 0 1 9.59-1.8c.2 0 .35.15.34.34ZM47.96 29.24c7.87-7.77 17.2-15.02 27.15-18.87a10.32 10.32 0 0 0 3.54 6.13 12.33 12.33 0 0 0 6.8 2.95c-3.8 10.29-11.39 19.93-19.54 28.03A169.1 169.1 0 0 1 39.04 68.9c-.15.1-.37.08-.53-.09l-4.68-5.02 10.73-10.73a1.5 1.5 0 0 0-2.12-2.12L31.78 61.6l-5.16-5.53a.42.42 0 0 1-.06-.52 167.03 167.03 0 0 1 21.4-26.31Zm-18.3 34.48-2.35 2.35-2.43-2.69a.47.47 0 0 1 .01-.65l1.99-1.99 2.78 2.98Zm-.33 4.57 2.37-2.37 3.64 3.89L33 71.67a.47.47 0 0 1-.65-.05l-3.03-3.33ZM47 67.15c3.38-2.4 7.6-5.56 12.06-9.34l-2.88 12.25a.47.47 0 0 1-.14.24l-8.25 7.56a.47.47 0 0 1-.79-.34V67.15Zm-9.8-30.73A177.28 177.28 0 0 0 28.11 48H17.48a.47.47 0 0 1-.37-.76l5.17-6.8a.47.47 0 0 1 .26-.16l14.67-3.86ZM14.06 81.44a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9-6.88a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Zm-7-4.12a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9 12.12a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Z"></path>
-                    </svg><path d="M78.2 14.36a1.73 1.73 0 0 1 1.27-1.85 37.5 37.5 0 0 1 7.66-1.5c1.09-.09 1.98.8 1.9 1.89-.21 2.6-.79 5.19-1.56 7.8a1.71 1.71 0 0 1-1.66 1.28c-4.27-.16-7.08-3.56-7.62-7.62ZM34.55 77.77l3.55-2.84-10-11-3.36 2.69c-.89.7-1 2.02-.23 2.86l7.34 8.08c.7.77 1.88.86 2.7.21ZM70.1 37.93a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm-7 7a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" opacity=".2"></path> <path d="M75.5 27a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-7 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-14 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm4-7a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM27.21 70.41l2.93 3.23a3.47 3.47 0 0 0 4.74.37l2.82-2.25c.95.34 2.03.25 2.95-.33.8-.51 1.95-1.26 3.35-2.2v8.29c0 3.02 3.6 4.6 5.82 2.56l8.25-7.56a3.5 3.5 0 0 0 1.03-1.77l3.84-16.33c1.7-1.53 3.4-3.13 5.08-4.8 11.26-11.2 22.04-25.83 22.92-41.56a3.32 3.32 0 0 0-3.5-3.5c-15.71.86-30.38 11.47-41.59 22.54a161.7 161.7 0 0 0-5.19 5.4 1.5 1.5 0 0 0-.54.05l-18.35 4.83c-.74.2-1.4.63-1.87 1.25l-5.18 6.8A3.47 3.47 0 0 0 17.48 51H26c-.83 1.21-1.5 2.2-1.95 2.92a3.42 3.42 0 0 0 .38 4.2l.4.43-2.06 2.06a3.47 3.47 0 0 0-.11 4.79l2.53 2.79-.75.75a1.5 1.5 0 0 0 2.12 2.12l.65-.65ZM87.95 7.9c-.17 2.9-.7 5.78-1.53 8.61a9.21 9.21 0 0 1-5.8-2.27 7.13 7.13 0 0 1-2.6-4.88 39.23 39.23 0 0 1 9.59-1.8c.2 0 .35.15.34.34ZM47.96 29.24c7.87-7.77 17.2-15.02 27.15-18.87a10.32 10.32 0 0 0 3.54 6.13 12.33 12.33 0 0 0 6.8 2.95c-3.8 10.29-11.39 19.93-19.54 28.03A169.1 169.1 0 0 1 39.04 68.9c-.15.1-.37.08-.53-.09l-4.68-5.02 10.73-10.73a1.5 1.5 0 0 0-2.12-2.12L31.78 61.6l-5.16-5.53a.42.42 0 0 1-.06-.52 167.03 167.03 0 0 1 21.4-26.31Zm-18.3 34.48-2.35 2.35-2.43-2.69a.47.47 0 0 1 .01-.65l1.99-1.99 2.78 2.98Zm-.33 4.57 2.37-2.37 3.64 3.89L33 71.67a.47.47 0 0 1-.65-.05l-3.03-3.33ZM47 67.15c3.38-2.4 7.6-5.56 12.06-9.34l-2.88 12.25a.47.47 0 0 1-.14.24l-8.25 7.56a.47.47 0 0 1-.79-.34V67.15Zm-9.8-30.73A177.28 177.28 0 0 0 28.11 48H17.48a.47.47 0 0 1-.37-.76l5.17-6.8a.47.47 0 0 1 .26-.16l14.67-3.86ZM14.06 81.44a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9-6.88a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Zm-7-4.12a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9 12.12a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Z"></path> <span class="font-bold">DevOps<br>  engineers</span>  
-                </div>
-                <div class=" h-[240px] w-[180px] rounded-md hover:bg-gray-700 text-[20px] text-center  ">
-                    <svg aria-hidden="true" class="mt-6 mx-10 mb-3 fc-black-300 mb0 mx32 svg-spot spotMetricsLg" width="96"  fill="gray" height="96" viewBox="0 0 96 96"><path d="M86 26.5a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Zm-52 25a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Zm-15 40a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13ZM72.5 60a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" opacity=".2"></path><path d="M75 17a8 8 0 1 1 6.49 7.86L68.04 50.79A7.98 7.98 0 0 1 63 65a8 8 0 0 1-7.85-9.55l-17-9.84a8 8 0 0 1-8.56 4.27L20.21 75.2a8 8 0 1 1-2.8-1.08l9.38-25.32a8 8 0 1 1 12.19-6.18l17.3 10.02a8 8 0 0 1 9.12-3.27l13.29-25.63A8 8 0 0 1 75 17Zm8-5a5 5 0 1 0 0 10 5 5 0 0 0 0-10ZM31 37a5 5 0 1 0 0 10 5 5 0 0 0 0-10ZM16 77a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm42-20a5 5 0 1 0 10 0 5 5 0 0 0-10 0Z"></path></svg><span class="font-bold">Data <br> scientists</span>
-                </div>
-                <div class=" border-2 h-[420px] w-[380px]  rounded-md hover:bg-gray-700 text-[20px] text-center mt-[-75px] bg-gray-700  ">
-                    <svg aria-hidden="true" class=" mt-6 mx-32 mb-4     spotTechnicalWritingLg" fill="blue"width="115" height="125" viewBox="0 0 96 96"><path d="M33.3 60.21a1 1 0 0 1-.04-1.46l41.1-40.1a1 1 0 0 1 .33-.22l10.83-4.17a1 1 0 0 1 1.31 1.25l-3.26 9.78a1 1 0 0 1-.22.37L43.17 67.8a1 1 0 0 1-1.4.05l-8.48-7.64Zm-9.19 19.02a1 1 0 0 0 .38.98l2.12 1.61a1 1 0 0 1 .11 1.49l-9.1 9.48a3 3 0 0 1-4.29.04l-5.1-5.1a3 3 0 0 1 .11-4.35l12.5-11.28a1 1 0 0 1 1.33-.01l2.38 2.08a1 1 0 0 1 .33.94l-.77 4.12Z" opacity=".2"></path><path d="M91.4 5.56a1.5 1.5 0 0 0-1.87-1.98l-15 5c-.24.07-.44.2-.61.38l-9.2 9.6.26-1.85a1.5 1.5 0 0 0-.86-1.58l-11-5a1.5 1.5 0 0 0-1.93.64l-4.51 8.12c-2.16-.21-4.27-.2-6.35 0l-4.52-8.12a1.5 1.5 0 0 0-1.93-.64l-11 5a1.5 1.5 0 0 0-.84 1.73l1.77 7.06c-.9.76-1.6 1.62-2.22 2.46-.32.44-.63.9-.93 1.33v.01a245.75 245.75 0 0 1-.71 1.01l-7.98-2.65a1.5 1.5 0 0 0-1.85.84l-5 12a1.5 1.5 0 0 0 .77 1.95l8 3.56c-.2 2.27-.2 4.93 0 7.14l-8 3.56a1.5 1.5 0 0 0-.77 1.95l5 12a1.5 1.5 0 0 0 1.85.84l2.58-.86-9.57 8.84a1.5 1.5 0 0 0-.04 2.16l9 9a1.5 1.5 0 0 0 2.12 0l7.77-7.76 10.05 4.57c.73.33 1.6.02 1.96-.7l3.53-7.06c2.19.22 4.34.2 6.45-.02l5.48 7.31c.4.54 1.13.74 1.76.5l10-4c.62-.26 1-.9.93-1.57l-.9-8.13a21 21 0 0 0 3.99-4.01l7.06 1.77a1.5 1.5 0 0 0 1.73-.84l5-11a1.5 1.5 0 0 0-.5-1.84L74.1 51.8c.24-2.24.22-4.44 0-6.6l6.28-4.48c.57-.4.78-1.15.52-1.8l-3.59-8.64a1.5 1.5 0 0 0-.58-.7l8.35-8.53c.14-.14.25-.3.32-.5l6-15ZM20.01 68.1c.1-.09.18-.19.25-.3 1 1.46 2.1 2.94 3.55 4.24l-1.67 6.7-.65.64-5.94-5.94a1.5 1.5 0 0 0-.86-.43l5.32-4.9ZM13 74.58c.02.36.17.7.44.98l5.94 5.94L15 85.88l-6.84-6.84L13 74.58Zm12.34 3.74 1.62-6.46a1.5 1.5 0 0 0-.53-1.54c-1.7-1.33-2.8-2.93-4.13-4.86l-.57-.82a1.5 1.5 0 0 0-1.7-.56l-7.68 2.56-3.9-9.36 7.66-3.4c.6-.28.96-.91.88-1.57a37.6 37.6 0 0 1 0-8.61 1.5 1.5 0 0 0-.88-1.57l-7.66-3.4 3.9-9.37 7.68 2.56c.6.2 1.26 0 1.65-.5.45-.57.86-1.15 1.24-1.7l.22-.32.87-1.24a10.1 10.1 0 0 1 2.35-2.43c.5-.36.75-.99.6-1.6l-1.7-6.78 8.6-3.91 4.33 7.79c.3.53.89.84 1.5.76a29.4 29.4 0 0 1 7.61 0 1.5 1.5 0 0 0 1.51-.76l4.33-7.8 8.72 3.97-.7 4.87-6.23 6.5a14.06 14.06 0 0 0-4.86-2.61A21.77 21.77 0 0 0 43.5 25C31.49 25 23 34.69 23 46.5c0 11.76 8.53 22.1 20.6 22.1C55.47 68.6 66 58.44 66 46.5a10.2 10.2 0 0 0-1.14-4.65l-.02-.02a4.72 4.72 0 0 0-.03-.06l9.84-10.06 3 7.26-6.02 4.3A1.5 1.5 0 0 0 71 44.7c.32 2.5.35 5.04 0 7.61-.07.55.17 1.1.62 1.42l6 4.28-3.98 8.74-6.79-1.7a1.5 1.5 0 0 0-1.54.53c-1.66 2.12-2.65 3.29-4.68 4.7-.45.31-.7.85-.63 1.4l.87 7.86L53 82.69l-5.31-7.08a1.5 1.5 0 0 0-1.39-.59c-2.5.32-5.04.35-7.61 0a1.5 1.5 0 0 0-1.54.82l-3.36 6.7-8.32-3.78a1.5 1.5 0 0 0-.14-.43Zm37.38-53.34a1.5 1.5 0 0 0 1.26-1.27l.01-.06 10.54-11 7.36 7.36-43.73 44.7a17.18 17.18 0 0 1-8-5.76l32.56-33.97ZM49.1 29c1.62.55 2.93 1.23 3.74 1.94L28.47 56.38A20.59 20.59 0 0 1 26 46.5C26 36.14 33.34 28 43.5 28c1.58 0 3.68.35 5.61 1Zm-5.52 36.6c-.67 0-1.34-.04-1.99-.11l20.96-21.43.02.04v.02c.21.59.42 1.42.42 2.38 0 10.23-9.12 19.1-19.4 19.1Zm39.86-48.27-6.42-6.42L87.4 7.45l-3.96 9.88Z"></path></svg> <span class="font-bold ">Software engineers</span> <br><span class="text-[17px] "> Help engineers be more efficient and <br> streamline knowledge sharing using a <br> tool they already love and trust.</span>
-                </div>
-                <div class=" h-[240px] w-[180px] rounded-md hover:bg-gray-700 text-[20px] text-center">
-                    <svg aria-hidden="true" class="mt-6 mx-10 mb-3 fc-black-300 mb0 mx32 svg-spot spotHeadsetLg" width="96" height="96" fill="gray" viewBox="0 0 96 96"><path d="M67.37 12.9A38.67 38.67 0 0 0 50.8 9a38.02 38.02 0 0 0-16.47 3.9c-.38.3-.44.74-.19 1.2l4.74 7.49c.24.35.79.61 1.29.6.1-.01.21-.04.32-.07 1.01-.29 6.76-1.88 10.4-1.88 3.7 0 9.6 1.65 10.45 1.9.07.02.14.04.22.04.44.05 1-.15 1.25-.6l4.73-7.49c.26-.44.2-.9-.18-1.18ZM19 77.5a7.84 7.84 0 0 0 7.79 7.88 3.98 3.98 0 0 0 3.93-3.9v-18.5A4 4 0 0 0 26.8 59a7.84 7.84 0 0 0-7.8 7.89v10.6Zm57.94 6.88c4.3 0 7.78-3.54 7.78-7.89V65.9a7.84 7.84 0 0 0-7.78-7.9A4 4 0 0 0 73 61.99v18.5a3.98 3.98 0 0 0 3.94 3.89ZM49 92h6a3 3 0 0 0 0-6h-6a3 3 0 0 0 0 6Z" opacity=".2"></path><path d="M54.5 12a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM50 10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM42.5 12a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM11 43.69a37.1 37.1 0 0 1 19.3-32.54l1.99 2.93C20.7 19.81 13.95 30.6 13.95 44.57a1.5 1.5 0 0 0 3 0c0-13 6.27-22.8 17-27.96l.05-.02 1.66 2.44c.38.57 1.1.8 1.74.57a34.63 34.63 0 0 1 11.47-1.97c4.03 0 7.94.63 11.45 1.96.66.25 1.4 0 1.79-.58l1.33-2.06c10.35 5.35 16.59 14.92 16.59 27.62a1.5 1.5 0 0 0 3 0c0-13.74-6.78-24.26-17.95-30.14l1.99-3.06A37.8 37.8 0 0 1 75 17.41a36.77 36.77 0 0 1 11 26.28V64h-3v-1.23c0-5.26-4.7-9.27-10.13-9.27-3.06 0-5.87 2.31-5.87 5.43v18.23c0 3.05 2.83 5.34 5.87 5.34.2 0 .4 0 .59-.02-.07.39-.21.77-.4 1.06-.28.43-.5.46-.56.46H54.74a4.5 4.5 0 0 0-4.24-3h-6a4.5 4.5 0 0 0 0 9h6a4.5 4.5 0 0 0 4.24-3H72.5a3.7 3.7 0 0 0 3.07-1.83c.6-.92.93-2.08.93-3.17v-.03a1.78 1.78 0 0 0 0-.09c3.74-1.32 6.5-4.62 6.5-8.65V73h4.33c2.46 0 4.17-2.19 4.17-4.5 0-1.74-.97-3.41-2.5-4.13V43.69c0-11.12-4.5-21.1-11.88-28.41A40.39 40.39 0 0 0 48.5 3.5C26.1 3.5 8 21.45 8 43.69v20.48a4.5 4.5 0 0 0-3 4.33C5 70.81 6.7 73 9.17 73H13v.23c0 5.26 4.7 9.27 10.13 9.27 3.04 0 5.87-2.3 5.87-5.34V58.93c0-3.12-2.8-5.43-5.87-5.43C17.7 53.5 13 57.51 13 62.77V64h-2V43.69ZM37.5 16.4 33 9.8a37.72 37.72 0 0 1 15.5-3.3 37.5 37.5 0 0 1 15.89 3.49l-4.16 6.39a37.63 37.63 0 0 0-22.73.03Zm14.25 68.26a1.5 1.5 0 0 0 0 1.66c-.27.4-.73.67-1.25.67h-6a1.5 1.5 0 0 1 0-3h6c.52 0 .98.27 1.25.67ZM23.13 56.5c1.7 0 2.87 1.26 2.87 2.43v18.23c0 1.06-1.14 2.34-2.87 2.34-4.08 0-7.13-2.96-7.13-6.27V62.77c0-3.31 3.05-6.27 7.13-6.27ZM9.17 67H13v3H9.17C8.69 70 8 69.5 8 68.5S8.69 67 9.17 67ZM70 58.93c0-1.17 1.16-2.43 2.87-2.43 4.08 0 7.13 2.96 7.13 6.27v10.46c0 3.31-3.05 6.27-7.13 6.27-1.73 0-2.87-1.28-2.87-2.34V58.93ZM83.5 70v-3h3.83c.48 0 1.17.5 1.17 1.5s-.69 1.5-1.17 1.5H83.5Z"></path></svg><span class="font-bold">Support <br>teams</span>
-                </div>
-                <div class=" h-[240px] w-[180px] rounded-md hover:bg-gray-700 text-[20px] text-center">
-                    <svg aria-hidden="true" class="mt-6 mx-10 mb-3 fc-black-300 mb0 mx32 svg-spot spotPeopleLg"fill="gray" width="96" height="96" viewBox="0 0 96 96"><path opacity=".2" d="M36 47.5a9.48 9.48 0 0 1-3.67 7.5h5.76a1 1 0 0 1 .7.29l1.39 1.36A9.5 9.5 0 0 1 57.87 54h7.7a9.5 9.5 0 1 1 13.86 0H83a4 4 0 0 1 4 4v23a2 2 0 0 1-2 2H64v10a1 1 0 0 1-1 1H36a1 1 0 0 1-1-1V83H16a1 1 0 0 1-1-1V59a4 4 0 0 1 4-4h1.67a9.48 9.48 0 0 1 5.83-17 9.5 9.5 0 0 1 9.5 9.5Z"></path><path d="M13 44.5A11 11 0 1 1 30.98 53h.52a1.5 1.5 0 0 1 0 3H15.54C13.5 56 12 57.54 12 59.21V78h4.38a1.5 1.5 0 0 1-.38-1V63a1.5 1.5 0 0 1 3 0v14c0 .38-.14.73-.38 1h9.06a1.5 1.5 0 0 1 0 3H10.5A1.5 1.5 0 0 1 9 79.5V59.21c0-3.5 3.03-6.21 6.54-6.21h1.48A10.98 10.98 0 0 1 13 44.5Zm11-8a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm23 8A11 11 0 0 0 40.02 64h-1.33C35.12 64 32 66.73 32 70.3v20.2c0 .83.67 1.5 1.5 1.5h27c.83 0 1.5-.67 1.5-1.5V70.3c0-3.57-3.12-6.3-6.7-6.3h-1.32A11 11 0 0 0 47 44.5Zm-8 11a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm-4 14.8c0-1.7 1.55-3.3 3.7-3.3h16.6c2.15 0 3.7 1.6 3.7 3.3V89h-4V75a1.5 1.5 0 0 0-3 0v14H42V75a1.5 1.5 0 0 0-3 0v14h-4V70.3Zm35-36.8A11 11 0 0 1 76.98 53h1.7A6.28 6.28 0 0 1 85 59.21V79.5c0 .83-.67 1.5-1.5 1.5H66.32a1.5 1.5 0 0 1 0-3h8.06a1.5 1.5 0 0 1-.38-1V63a1.5 1.5 0 0 1 3 0v14c0 .38-.14.73-.38 1H82V59.21A3.28 3.28 0 0 0 78.68 56H62.5a1.5 1.5 0 0 1 0-3h.52A11 11 0 0 1 70 33.5Zm8 11a8 8 0 1 0-16 0 8 8 0 0 0 16 0Z"></path><path d="M12.5 11a1.5 1.5 0 0 0 0 3h13a1.5 1.5 0 0 0 0-3h-13ZM11 17.5c0-.83.67-1.5 1.5-1.5h9a1.5 1.5 0 0 1 0 3h-9a1.5 1.5 0 0 1-1.5-1.5Zm-5-10C6 6.67 6.67 6 7.5 6h25c.83 0 1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5H29v6a1.5 1.5 0 0 1-2.4 1.2L17 24H7.5A1.5 1.5 0 0 1 6 22.5v-15ZM9 9v12h8.5c.32 0 .64.1.9.3L26 27v-6h5V9H9Zm60.5 3a1.5 1.5 0 0 0 0 3h13a1.5 1.5 0 0 0 0-3h-13ZM68 18.5c0-.83.67-1.5 1.5-1.5h8a1.5 1.5 0 0 1 0 3h-8a1.5 1.5 0 0 1-1.5-1.5ZM87.5 7c.83 0 1.5.67 1.5 1.5v16c0 .83-.67 1.5-1.5 1.5H76.42l-7.15 4.29A1.5 1.5 0 0 1 67 29v-3h-2.5a1.5 1.5 0 0 1-1.5-1.5v-16c0-.83.67-1.5 1.5-1.5h23ZM86 23V10H66v13h4v3.35l5.23-3.14c.23-.14.5-.21.77-.21h10Zm-42.5 4a1.5 1.5 0 0 0 0 3h9a1.5 1.5 0 0 0 0-3h-9ZM59 22.5c0-.83-.67-1.5-1.5-1.5h-19c-.83 0-1.5.67-1.5 1.5v12c0 .83.67 1.5 1.5 1.5H41v4.5a1.5 1.5 0 0 0 2.56 1.06L49.12 36h8.38c.83 0 1.5-.67 1.5-1.5v-12ZM40 24h16v9h-8.12L44 36.88V33h-4v-9Z" opacity=".35"></path></svg><span class="font-bold">Engineering <br>leaders</span>
-                </div>  
-            </div>
-            <div class="bill flex  mt-[100px] text-white  gap-4 ml-[30px]">
-                <p>Annual billing discount</p>
-                <div class="button border-2 h-[29px] bg-gray-500 w-12 rounded-full">
-                </div>
-                <input type="checkbox" class="checkbox bg-white h-6 w-6 ml-[-60px] mt-[1.7px] rounded-full border-2 ">
-                <span class="round"></span>
-            </div>
-            <div class="flex justify-between mx-[4px] gap-2 mt-[30px]">
-                <div class="bg-white h-[640px] w-[320px] border-2 rounded-md">
-                    <div class=" text-white mt-[25px] flex justify-center  ml-[20px] mb-[20px] bg-orange-500 h-[35px] w-[48px] rounded-md">
-                        <span class="mt-[4px]">Free</span>
+            <div class="mx-14 h-[3200px] w-[1370px] rounded-lg bg-gradient-to-b from-black to-gray-700">
+                <div class="mx-[100px] h-[290px] rounded-lg pt-[90px]">
+                    <div class="items flex justify-center">
+                        <img src="images/logo3.png" alt="" class="  " />
                     </div>
-                    <span class="mx-7 text-[31px] font-bold ">Free</span><br>
-                    <span class="mx-[30px] text-gray-500 text-[15px]">No credit card required</span>
-                    <div class="border-[0.5px] mx-[18px] mt-[15px] border-orange-400 w-[280px]"></div>
-                    <div class="ml-[15px]">
-                        <div  class="text-[14.5px]  w-[285px] h-[50px]  my-[15px] flex "><svg aria-hidden="true" class="svg-icon iconBullhorn  mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M16 1a1 1 0 0 0-1 1v.38L5.3 6A2 2 0 0 0 4 7.9v2.22a2 2 0 0 0 1 1.74v1.65a3.5 3.5 0 0 0 6.87.95L15 15.63V16a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1ZM6.6 12.47l3.76 1.42a1.9 1.9 0 0 1-3.76-.39v-1.03ZM2 6a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V7a1 1 0 0 0-1-1Z"></path></svg>ChatOps integrations - Slack & Microsoft Teams
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px] my-[15px] flex"><svg aria-hidden="true" class="svg-icon iconShield mr-[10px] mt-[4px]"  width="18" height="18" viewBox="0 0 18 18"><path d="m2 4 7-3 7 3v5.02C16 13.69 10.69 17 9 17c-1.69 0-7-3.31-7-7.98V4Zm6.14 5.2L7 12h4L9.86 9.2a.58.58 0 0 1 .25-.59c.56-.36.89-.95.89-1.61 0-1.09-.94-2-2.02-2A2 2 0 0 0 7 7c0 .66.33 1.25.89 1.61.2.13.3.36.25.59Z"></path></svg>Your own private space hosted on stackoverflowteams.com
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px] my-[15px] flex"><svg aria-hidden="true" class="svg-icon iconArchive  mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M3 1a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2H3ZM2 5h14v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5Zm4 3a1 1 0 0 0 1 1h4a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z"></path></svg>Structured and searchable knowledge base
-                        </div>
+                    <div class="mt-7">
+                        <p class="text-center text-[26px] font-bold text-white">
+                            Capture your company's knowledge and context in a <br />
+                            discoverable format to
+                            <span class="text-orange-500">unblock your team</span>
+                        </p>
                     </div>
-                    <div class="button flex justify-center items-center  text-white mt-[170px]">
-                        <a href=""  class=" w-[270px]  "><button class=" button hover:bg-orange-800 h-[43px] rounded-md w-[270px] mb-3 bg-orange-600 font-medium">Create a free Team </button></a>
-                    </div>
-                    <span class="flex justify-center text-gray-500">Always free up to 50 teammates</span>
                 </div>
-                <div class="bg-white h-[640px] w-[320px] border-2 rounded-md">
-                    <div class=" text-white mt-[25px] flex justify-center  ml-[20px] mb-[20px] bg-gray-400 h-[35px] w-[48px] rounded-md">
-                        <span class="mt-[4px]">Basic</span>
-                    </div>
-                    <span class="mx-7 text-[31px] font-bold ">$7 USD</span><br>
-                    <span class="mx-[30px] text-gray-500 text-[15px]">per teammate / month </span>
-                    <div class="border-[0.5px] mx-[18px] mt-[15px] border-gray-200 w-[280px]"></div>
-                    <div class="ml-[15px]">
-                        <div  class="text-[14.5px]  w-[285px] h-[50px]  my-[11px] flex"><svg aria-hidden="true" class="svg-icon iconKey mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M17 5.5a4.5 4.5 0 0 1-5.8 4.3L10 11H8v2H6v2H4v2H1v-3.5l7.1-7.1A4.52 4.52 0 0 1 12.5 1 4.5 4.5 0 0 1 17 5.5Zm-4 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>Single sign-on (SSO) with SAML + Okta  integration
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px] my-[11px] flex"><svg aria-hidden="true" class="svg-icon iconBullhorn mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M16 1a1 1 0 0 0-1 1v.38L5.3 6A2 2 0 0 0 4 7.9v2.22a2 2 0 0 0 1 1.74v1.65a3.5 3.5 0 0 0 6.87.95L15 15.63V16a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1ZM6.6 12.47l3.76 1.42a1.9 1.9 0 0 1-3.76-.39v-1.03ZM2 6a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V7a1 1 0 0 0-1-1Z"></path></svg>ChatOps integrations - Slack & Microsoft Teams
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px] my-[11px] flex"><svg aria-hidden="true" class="svg-icon iconShield mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="m2 4 7-3 7 3v5.02C16 13.69 10.69 17 9 17c-1.69 0-7-3.31-7-7.98V4Zm6.14 5.2L7 12h4L9.86 9.2a.58.58 0 0 1 .25-.59c.56-.36.89-.95.89-1.61 0-1.09-.94-2-2.02-2A2 2 0 0 0 7 7c0 .66.33 1.25.89 1.61.2.13.3.36.25.59Z"></path></svg>Your own private space hosted on stackoverflowteams.com
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px] my-[11px] flex"><svg aria-hidden="true" class="svg-icon iconArchive mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M3 1a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2H3ZM2 5h14v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5Zm4 3a1 1 0 0 0 1 1h4a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z"></path></svg>Structured and searchable knowledge base
-                        </div>
-                    </div>
-                    <div class="button flex justify-center items-center  text-white mt-[118px]">
-                        <a href=""  class=" w-[270px]  "><button class=" button hover:bg-gray-500 h-[43px] rounded-md w-[270px] mb-3 bg-gray-400 font-medium">Get started </button></a>
-                    </div>
-                    <span class="flex justify-center text-gray-500">Up to 250 teammates</span>
+                <div class="mt-[16px] flex h-[43px] justify-center">
+                    <a href="" class="w-[200px]"><button class="button h-[43px] w-[200px] rounded-md bg-blue-500 font-medium text-white hover:bg-blue-700">Take a tour of Teams</button></a>
                 </div>
-                <div class="bg-gray-200 h-[693px] w-[330px] mt-[-50px] border-2 rounded-md">
-                    <div class="bg-gray-300  w-[330px]  ml-[-2.1px] h-[42px] mt-[-2.9px] rounded-md">
-                        <span class="mx-2">RECOMMENDED</span> 
-                        <svg class="h-6 w-8  ml-[280px] mt-[-19px]" style="fill:black;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 176"><path d="M155.706,176c-0.001,0-0.003,0-0.005,0l-65.411-0.125H20.294c-1.381,0-2.5-1.119-2.5-2.5V60.904
+                <div class="mx-20 mt-20 flex h-[200px] justify-around">
+                    <div class="h-[100px] text-center text-[16px] text-gray-400">
+                        <span class="text-[23px] font-bold text-white"
+                            ><span class="rounded-[900px] bg-green-600 px-[8px] py-[0.5px] text-black">&#10003;</span>
+                            <br />
+                            Increase productivity</span
+                        ><br />If somebody somewhere has the right <br />
+                        answer, suddenly you have it too.<br />
+                        Collaborate better in a remote-first world.
+                    </div>
+                    <div class="h-[100px] text-center text-[16px] text-gray-400">
+                        <span class="text-[23px] font-bold text-white"
+                            ><span class="rounded-[900px] bg-green-600 px-[8px] py-[0.5px] text-black">&#10003;</span><br />
+                            Accelerate time to market </span
+                        ><br />Shorten the time between initial idea and <br />
+                        complete product. Take delays and <br />
+                        misinformation out of the equation.
+                    </div>
+                    <div class="h-[100px] text-center text-[16px] text-gray-400">
+                        <span class="text-[23px] font-bold text-white"
+                            ><span class="rounded-[900px] bg-green-600 px-[8px] py-[0.5px] text-black">&#10003;</span><br />
+                            Protect institutional knowledge</span
+                        >
+                        <br />People come and people go, but if you <br />
+                        capture their contributions in one central <br />
+                        place, that expertise sticks around.
+                    </div>
+                </div>
+                <div class="mx-[180px] mt-14 w-[1000px] border-[0.5px] border-gray-500"></div>
+                <div class="mt-[80px] py-3 text-center text-white">
+                    <span class="text-[34px] font-bold"> Ensure your company stays on course</span><br />
+                    <span class="text-[19px]">Here are just a few types of technologists that we help.</span>
+                </div>
+                <div class="mx-[130px] mt-32 flex gap-4 text-white">
+                    <div class="h-[240px] w-[180px] rounded-md text-center text-[20px] hover:bg-gray-700">
+                        <svg class="fc-gray-100 mb0 mx32 svg-spot spotRocketLg mx-10 mt-6 mb-3" width="96" fill="gray" height="96" viewBox="0 0 96 96">
+                            <path
+                                d="M78.2 14.36a1.73 1.73 0 0 1 1.27-1.85 37.5 37.5 0 0 1 7.66-1.5c1.09-.09 1.98.8 1.9 1.89-.21 2.6-.79 5.19-1.56 7.8a1.71 1.71 0 0 1-1.66 1.28c-4.27-.16-7.08-3.56-7.62-7.62ZM34.55 77.77l3.55-2.84-10-11-3.36 2.69c-.89.7-1 2.02-.23 2.86l7.34 8.08c.7.77 1.88.86 2.7.21ZM70.1 37.93a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm-7 7a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                                opacity=".2"></path>
+                            <path
+                                d="M75.5 27a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-7 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-14 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm4-7a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM27.21 70.41l2.93 3.23a3.47 3.47 0 0 0 4.74.37l2.82-2.25c.95.34 2.03.25 2.95-.33.8-.51 1.95-1.26 3.35-2.2v8.29c0 3.02 3.6 4.6 5.82 2.56l8.25-7.56a3.5 3.5 0 0 0 1.03-1.77l3.84-16.33c1.7-1.53 3.4-3.13 5.08-4.8 11.26-11.2 22.04-25.83 22.92-41.56a3.32 3.32 0 0 0-3.5-3.5c-15.71.86-30.38 11.47-41.59 22.54a161.7 161.7 0 0 0-5.19 5.4 1.5 1.5 0 0 0-.54.05l-18.35 4.83c-.74.2-1.4.63-1.87 1.25l-5.18 6.8A3.47 3.47 0 0 0 17.48 51H26c-.83 1.21-1.5 2.2-1.95 2.92a3.42 3.42 0 0 0 .38 4.2l.4.43-2.06 2.06a3.47 3.47 0 0 0-.11 4.79l2.53 2.79-.75.75a1.5 1.5 0 0 0 2.12 2.12l.65-.65ZM87.95 7.9c-.17 2.9-.7 5.78-1.53 8.61a9.21 9.21 0 0 1-5.8-2.27 7.13 7.13 0 0 1-2.6-4.88 39.23 39.23 0 0 1 9.59-1.8c.2 0 .35.15.34.34ZM47.96 29.24c7.87-7.77 17.2-15.02 27.15-18.87a10.32 10.32 0 0 0 3.54 6.13 12.33 12.33 0 0 0 6.8 2.95c-3.8 10.29-11.39 19.93-19.54 28.03A169.1 169.1 0 0 1 39.04 68.9c-.15.1-.37.08-.53-.09l-4.68-5.02 10.73-10.73a1.5 1.5 0 0 0-2.12-2.12L31.78 61.6l-5.16-5.53a.42.42 0 0 1-.06-.52 167.03 167.03 0 0 1 21.4-26.31Zm-18.3 34.48-2.35 2.35-2.43-2.69a.47.47 0 0 1 .01-.65l1.99-1.99 2.78 2.98Zm-.33 4.57 2.37-2.37 3.64 3.89L33 71.67a.47.47 0 0 1-.65-.05l-3.03-3.33ZM47 67.15c3.38-2.4 7.6-5.56 12.06-9.34l-2.88 12.25a.47.47 0 0 1-.14.24l-8.25 7.56a.47.47 0 0 1-.79-.34V67.15Zm-9.8-30.73A177.28 177.28 0 0 0 28.11 48H17.48a.47.47 0 0 1-.37-.76l5.17-6.8a.47.47 0 0 1 .26-.16l14.67-3.86ZM14.06 81.44a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9-6.88a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Zm-7-4.12a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9 12.12a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Z"></path></svg
+                        ><path
+                            d="M78.2 14.36a1.73 1.73 0 0 1 1.27-1.85 37.5 37.5 0 0 1 7.66-1.5c1.09-.09 1.98.8 1.9 1.89-.21 2.6-.79 5.19-1.56 7.8a1.71 1.71 0 0 1-1.66 1.28c-4.27-.16-7.08-3.56-7.62-7.62ZM34.55 77.77l3.55-2.84-10-11-3.36 2.69c-.89.7-1 2.02-.23 2.86l7.34 8.08c.7.77 1.88.86 2.7.21ZM70.1 37.93a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm-7 7a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                            opacity=".2"></path>
+                        <path
+                            d="M75.5 27a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-7 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-14 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm4-7a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM27.21 70.41l2.93 3.23a3.47 3.47 0 0 0 4.74.37l2.82-2.25c.95.34 2.03.25 2.95-.33.8-.51 1.95-1.26 3.35-2.2v8.29c0 3.02 3.6 4.6 5.82 2.56l8.25-7.56a3.5 3.5 0 0 0 1.03-1.77l3.84-16.33c1.7-1.53 3.4-3.13 5.08-4.8 11.26-11.2 22.04-25.83 22.92-41.56a3.32 3.32 0 0 0-3.5-3.5c-15.71.86-30.38 11.47-41.59 22.54a161.7 161.7 0 0 0-5.19 5.4 1.5 1.5 0 0 0-.54.05l-18.35 4.83c-.74.2-1.4.63-1.87 1.25l-5.18 6.8A3.47 3.47 0 0 0 17.48 51H26c-.83 1.21-1.5 2.2-1.95 2.92a3.42 3.42 0 0 0 .38 4.2l.4.43-2.06 2.06a3.47 3.47 0 0 0-.11 4.79l2.53 2.79-.75.75a1.5 1.5 0 0 0 2.12 2.12l.65-.65ZM87.95 7.9c-.17 2.9-.7 5.78-1.53 8.61a9.21 9.21 0 0 1-5.8-2.27 7.13 7.13 0 0 1-2.6-4.88 39.23 39.23 0 0 1 9.59-1.8c.2 0 .35.15.34.34ZM47.96 29.24c7.87-7.77 17.2-15.02 27.15-18.87a10.32 10.32 0 0 0 3.54 6.13 12.33 12.33 0 0 0 6.8 2.95c-3.8 10.29-11.39 19.93-19.54 28.03A169.1 169.1 0 0 1 39.04 68.9c-.15.1-.37.08-.53-.09l-4.68-5.02 10.73-10.73a1.5 1.5 0 0 0-2.12-2.12L31.78 61.6l-5.16-5.53a.42.42 0 0 1-.06-.52 167.03 167.03 0 0 1 21.4-26.31Zm-18.3 34.48-2.35 2.35-2.43-2.69a.47.47 0 0 1 .01-.65l1.99-1.99 2.78 2.98Zm-.33 4.57 2.37-2.37 3.64 3.89L33 71.67a.47.47 0 0 1-.65-.05l-3.03-3.33ZM47 67.15c3.38-2.4 7.6-5.56 12.06-9.34l-2.88 12.25a.47.47 0 0 1-.14.24l-8.25 7.56a.47.47 0 0 1-.79-.34V67.15Zm-9.8-30.73A177.28 177.28 0 0 0 28.11 48H17.48a.47.47 0 0 1-.37-.76l5.17-6.8a.47.47 0 0 1 .26-.16l14.67-3.86ZM14.06 81.44a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9-6.88a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Zm-7-4.12a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9 12.12a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Z"></path>
+                        <span class="font-bold"
+                            >DevOps<br />
+                            engineers</span
+                        >
+                    </div>
+                    <div class="h-[240px] w-[180px] rounded-md text-center text-[20px] hover:bg-gray-700">
+                        <svg aria-hidden="true" class="fc-black-300 mb0 mx32 svg-spot spotMetricsLg mx-10 mt-6 mb-3" width="96" fill="gray" height="96" viewBox="0 0 96 96">
+                            <path d="M86 26.5a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Zm-52 25a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Zm-15 40a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13ZM72.5 60a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" opacity=".2"></path>
+                            <path
+                                d="M75 17a8 8 0 1 1 6.49 7.86L68.04 50.79A7.98 7.98 0 0 1 63 65a8 8 0 0 1-7.85-9.55l-17-9.84a8 8 0 0 1-8.56 4.27L20.21 75.2a8 8 0 1 1-2.8-1.08l9.38-25.32a8 8 0 1 1 12.19-6.18l17.3 10.02a8 8 0 0 1 9.12-3.27l13.29-25.63A8 8 0 0 1 75 17Zm8-5a5 5 0 1 0 0 10 5 5 0 0 0 0-10ZM31 37a5 5 0 1 0 0 10 5 5 0 0 0 0-10ZM16 77a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm42-20a5 5 0 1 0 10 0 5 5 0 0 0-10 0Z"></path></svg
+                        ><span class="font-bold"
+                            >Data <br />
+                            scientists</span
+                        >
+                    </div>
+                    <div class="mt-[-75px] h-[420px] w-[380px] rounded-md border-2 bg-gray-700 text-center text-[20px] hover:bg-gray-700">
+                        <svg aria-hidden="true" class="spotTechnicalWritingLg mx-32 mt-6 mb-4" fill="blue" width="115" height="125" viewBox="0 0 96 96">
+                            <path
+                                d="M33.3 60.21a1 1 0 0 1-.04-1.46l41.1-40.1a1 1 0 0 1 .33-.22l10.83-4.17a1 1 0 0 1 1.31 1.25l-3.26 9.78a1 1 0 0 1-.22.37L43.17 67.8a1 1 0 0 1-1.4.05l-8.48-7.64Zm-9.19 19.02a1 1 0 0 0 .38.98l2.12 1.61a1 1 0 0 1 .11 1.49l-9.1 9.48a3 3 0 0 1-4.29.04l-5.1-5.1a3 3 0 0 1 .11-4.35l12.5-11.28a1 1 0 0 1 1.33-.01l2.38 2.08a1 1 0 0 1 .33.94l-.77 4.12Z"
+                                opacity=".2"></path>
+                            <path
+                                d="M91.4 5.56a1.5 1.5 0 0 0-1.87-1.98l-15 5c-.24.07-.44.2-.61.38l-9.2 9.6.26-1.85a1.5 1.5 0 0 0-.86-1.58l-11-5a1.5 1.5 0 0 0-1.93.64l-4.51 8.12c-2.16-.21-4.27-.2-6.35 0l-4.52-8.12a1.5 1.5 0 0 0-1.93-.64l-11 5a1.5 1.5 0 0 0-.84 1.73l1.77 7.06c-.9.76-1.6 1.62-2.22 2.46-.32.44-.63.9-.93 1.33v.01a245.75 245.75 0 0 1-.71 1.01l-7.98-2.65a1.5 1.5 0 0 0-1.85.84l-5 12a1.5 1.5 0 0 0 .77 1.95l8 3.56c-.2 2.27-.2 4.93 0 7.14l-8 3.56a1.5 1.5 0 0 0-.77 1.95l5 12a1.5 1.5 0 0 0 1.85.84l2.58-.86-9.57 8.84a1.5 1.5 0 0 0-.04 2.16l9 9a1.5 1.5 0 0 0 2.12 0l7.77-7.76 10.05 4.57c.73.33 1.6.02 1.96-.7l3.53-7.06c2.19.22 4.34.2 6.45-.02l5.48 7.31c.4.54 1.13.74 1.76.5l10-4c.62-.26 1-.9.93-1.57l-.9-8.13a21 21 0 0 0 3.99-4.01l7.06 1.77a1.5 1.5 0 0 0 1.73-.84l5-11a1.5 1.5 0 0 0-.5-1.84L74.1 51.8c.24-2.24.22-4.44 0-6.6l6.28-4.48c.57-.4.78-1.15.52-1.8l-3.59-8.64a1.5 1.5 0 0 0-.58-.7l8.35-8.53c.14-.14.25-.3.32-.5l6-15ZM20.01 68.1c.1-.09.18-.19.25-.3 1 1.46 2.1 2.94 3.55 4.24l-1.67 6.7-.65.64-5.94-5.94a1.5 1.5 0 0 0-.86-.43l5.32-4.9ZM13 74.58c.02.36.17.7.44.98l5.94 5.94L15 85.88l-6.84-6.84L13 74.58Zm12.34 3.74 1.62-6.46a1.5 1.5 0 0 0-.53-1.54c-1.7-1.33-2.8-2.93-4.13-4.86l-.57-.82a1.5 1.5 0 0 0-1.7-.56l-7.68 2.56-3.9-9.36 7.66-3.4c.6-.28.96-.91.88-1.57a37.6 37.6 0 0 1 0-8.61 1.5 1.5 0 0 0-.88-1.57l-7.66-3.4 3.9-9.37 7.68 2.56c.6.2 1.26 0 1.65-.5.45-.57.86-1.15 1.24-1.7l.22-.32.87-1.24a10.1 10.1 0 0 1 2.35-2.43c.5-.36.75-.99.6-1.6l-1.7-6.78 8.6-3.91 4.33 7.79c.3.53.89.84 1.5.76a29.4 29.4 0 0 1 7.61 0 1.5 1.5 0 0 0 1.51-.76l4.33-7.8 8.72 3.97-.7 4.87-6.23 6.5a14.06 14.06 0 0 0-4.86-2.61A21.77 21.77 0 0 0 43.5 25C31.49 25 23 34.69 23 46.5c0 11.76 8.53 22.1 20.6 22.1C55.47 68.6 66 58.44 66 46.5a10.2 10.2 0 0 0-1.14-4.65l-.02-.02a4.72 4.72 0 0 0-.03-.06l9.84-10.06 3 7.26-6.02 4.3A1.5 1.5 0 0 0 71 44.7c.32 2.5.35 5.04 0 7.61-.07.55.17 1.1.62 1.42l6 4.28-3.98 8.74-6.79-1.7a1.5 1.5 0 0 0-1.54.53c-1.66 2.12-2.65 3.29-4.68 4.7-.45.31-.7.85-.63 1.4l.87 7.86L53 82.69l-5.31-7.08a1.5 1.5 0 0 0-1.39-.59c-2.5.32-5.04.35-7.61 0a1.5 1.5 0 0 0-1.54.82l-3.36 6.7-8.32-3.78a1.5 1.5 0 0 0-.14-.43Zm37.38-53.34a1.5 1.5 0 0 0 1.26-1.27l.01-.06 10.54-11 7.36 7.36-43.73 44.7a17.18 17.18 0 0 1-8-5.76l32.56-33.97ZM49.1 29c1.62.55 2.93 1.23 3.74 1.94L28.47 56.38A20.59 20.59 0 0 1 26 46.5C26 36.14 33.34 28 43.5 28c1.58 0 3.68.35 5.61 1Zm-5.52 36.6c-.67 0-1.34-.04-1.99-.11l20.96-21.43.02.04v.02c.21.59.42 1.42.42 2.38 0 10.23-9.12 19.1-19.4 19.1Zm39.86-48.27-6.42-6.42L87.4 7.45l-3.96 9.88Z"></path>
+                        </svg>
+                        <span class="font-bold">Software engineers</span> <br /><span class="text-[17px]">
+                            Help engineers be more efficient and <br />
+                            streamline knowledge sharing using a <br />
+                            tool they already love and trust.</span
+                        >
+                    </div>
+                    <div class="h-[240px] w-[180px] rounded-md text-center text-[20px] hover:bg-gray-700">
+                        <svg aria-hidden="true" class="fc-black-300 mb0 mx32 svg-spot spotHeadsetLg mx-10 mt-6 mb-3" width="96" height="96" fill="gray" viewBox="0 0 96 96">
+                            <path
+                                d="M67.37 12.9A38.67 38.67 0 0 0 50.8 9a38.02 38.02 0 0 0-16.47 3.9c-.38.3-.44.74-.19 1.2l4.74 7.49c.24.35.79.61 1.29.6.1-.01.21-.04.32-.07 1.01-.29 6.76-1.88 10.4-1.88 3.7 0 9.6 1.65 10.45 1.9.07.02.14.04.22.04.44.05 1-.15 1.25-.6l4.73-7.49c.26-.44.2-.9-.18-1.18ZM19 77.5a7.84 7.84 0 0 0 7.79 7.88 3.98 3.98 0 0 0 3.93-3.9v-18.5A4 4 0 0 0 26.8 59a7.84 7.84 0 0 0-7.8 7.89v10.6Zm57.94 6.88c4.3 0 7.78-3.54 7.78-7.89V65.9a7.84 7.84 0 0 0-7.78-7.9A4 4 0 0 0 73 61.99v18.5a3.98 3.98 0 0 0 3.94 3.89ZM49 92h6a3 3 0 0 0 0-6h-6a3 3 0 0 0 0 6Z"
+                                opacity=".2"></path>
+                            <path
+                                d="M54.5 12a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM50 10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM42.5 12a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM11 43.69a37.1 37.1 0 0 1 19.3-32.54l1.99 2.93C20.7 19.81 13.95 30.6 13.95 44.57a1.5 1.5 0 0 0 3 0c0-13 6.27-22.8 17-27.96l.05-.02 1.66 2.44c.38.57 1.1.8 1.74.57a34.63 34.63 0 0 1 11.47-1.97c4.03 0 7.94.63 11.45 1.96.66.25 1.4 0 1.79-.58l1.33-2.06c10.35 5.35 16.59 14.92 16.59 27.62a1.5 1.5 0 0 0 3 0c0-13.74-6.78-24.26-17.95-30.14l1.99-3.06A37.8 37.8 0 0 1 75 17.41a36.77 36.77 0 0 1 11 26.28V64h-3v-1.23c0-5.26-4.7-9.27-10.13-9.27-3.06 0-5.87 2.31-5.87 5.43v18.23c0 3.05 2.83 5.34 5.87 5.34.2 0 .4 0 .59-.02-.07.39-.21.77-.4 1.06-.28.43-.5.46-.56.46H54.74a4.5 4.5 0 0 0-4.24-3h-6a4.5 4.5 0 0 0 0 9h6a4.5 4.5 0 0 0 4.24-3H72.5a3.7 3.7 0 0 0 3.07-1.83c.6-.92.93-2.08.93-3.17v-.03a1.78 1.78 0 0 0 0-.09c3.74-1.32 6.5-4.62 6.5-8.65V73h4.33c2.46 0 4.17-2.19 4.17-4.5 0-1.74-.97-3.41-2.5-4.13V43.69c0-11.12-4.5-21.1-11.88-28.41A40.39 40.39 0 0 0 48.5 3.5C26.1 3.5 8 21.45 8 43.69v20.48a4.5 4.5 0 0 0-3 4.33C5 70.81 6.7 73 9.17 73H13v.23c0 5.26 4.7 9.27 10.13 9.27 3.04 0 5.87-2.3 5.87-5.34V58.93c0-3.12-2.8-5.43-5.87-5.43C17.7 53.5 13 57.51 13 62.77V64h-2V43.69ZM37.5 16.4 33 9.8a37.72 37.72 0 0 1 15.5-3.3 37.5 37.5 0 0 1 15.89 3.49l-4.16 6.39a37.63 37.63 0 0 0-22.73.03Zm14.25 68.26a1.5 1.5 0 0 0 0 1.66c-.27.4-.73.67-1.25.67h-6a1.5 1.5 0 0 1 0-3h6c.52 0 .98.27 1.25.67ZM23.13 56.5c1.7 0 2.87 1.26 2.87 2.43v18.23c0 1.06-1.14 2.34-2.87 2.34-4.08 0-7.13-2.96-7.13-6.27V62.77c0-3.31 3.05-6.27 7.13-6.27ZM9.17 67H13v3H9.17C8.69 70 8 69.5 8 68.5S8.69 67 9.17 67ZM70 58.93c0-1.17 1.16-2.43 2.87-2.43 4.08 0 7.13 2.96 7.13 6.27v10.46c0 3.31-3.05 6.27-7.13 6.27-1.73 0-2.87-1.28-2.87-2.34V58.93ZM83.5 70v-3h3.83c.48 0 1.17.5 1.17 1.5s-.69 1.5-1.17 1.5H83.5Z"></path></svg
+                        ><span class="font-bold">Support <br />teams</span>
+                    </div>
+                    <div class="h-[240px] w-[180px] rounded-md text-center text-[20px] hover:bg-gray-700">
+                        <svg aria-hidden="true" class="fc-black-300 mb0 mx32 svg-spot spotPeopleLg mx-10 mt-6 mb-3" fill="gray" width="96" height="96" viewBox="0 0 96 96">
+                            <path
+                                opacity=".2"
+                                d="M36 47.5a9.48 9.48 0 0 1-3.67 7.5h5.76a1 1 0 0 1 .7.29l1.39 1.36A9.5 9.5 0 0 1 57.87 54h7.7a9.5 9.5 0 1 1 13.86 0H83a4 4 0 0 1 4 4v23a2 2 0 0 1-2 2H64v10a1 1 0 0 1-1 1H36a1 1 0 0 1-1-1V83H16a1 1 0 0 1-1-1V59a4 4 0 0 1 4-4h1.67a9.48 9.48 0 0 1 5.83-17 9.5 9.5 0 0 1 9.5 9.5Z"></path>
+                            <path
+                                d="M13 44.5A11 11 0 1 1 30.98 53h.52a1.5 1.5 0 0 1 0 3H15.54C13.5 56 12 57.54 12 59.21V78h4.38a1.5 1.5 0 0 1-.38-1V63a1.5 1.5 0 0 1 3 0v14c0 .38-.14.73-.38 1h9.06a1.5 1.5 0 0 1 0 3H10.5A1.5 1.5 0 0 1 9 79.5V59.21c0-3.5 3.03-6.21 6.54-6.21h1.48A10.98 10.98 0 0 1 13 44.5Zm11-8a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm23 8A11 11 0 0 0 40.02 64h-1.33C35.12 64 32 66.73 32 70.3v20.2c0 .83.67 1.5 1.5 1.5h27c.83 0 1.5-.67 1.5-1.5V70.3c0-3.57-3.12-6.3-6.7-6.3h-1.32A11 11 0 0 0 47 44.5Zm-8 11a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm-4 14.8c0-1.7 1.55-3.3 3.7-3.3h16.6c2.15 0 3.7 1.6 3.7 3.3V89h-4V75a1.5 1.5 0 0 0-3 0v14H42V75a1.5 1.5 0 0 0-3 0v14h-4V70.3Zm35-36.8A11 11 0 0 1 76.98 53h1.7A6.28 6.28 0 0 1 85 59.21V79.5c0 .83-.67 1.5-1.5 1.5H66.32a1.5 1.5 0 0 1 0-3h8.06a1.5 1.5 0 0 1-.38-1V63a1.5 1.5 0 0 1 3 0v14c0 .38-.14.73-.38 1H82V59.21A3.28 3.28 0 0 0 78.68 56H62.5a1.5 1.5 0 0 1 0-3h.52A11 11 0 0 1 70 33.5Zm8 11a8 8 0 1 0-16 0 8 8 0 0 0 16 0Z"></path>
+                            <path
+                                d="M12.5 11a1.5 1.5 0 0 0 0 3h13a1.5 1.5 0 0 0 0-3h-13ZM11 17.5c0-.83.67-1.5 1.5-1.5h9a1.5 1.5 0 0 1 0 3h-9a1.5 1.5 0 0 1-1.5-1.5Zm-5-10C6 6.67 6.67 6 7.5 6h25c.83 0 1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5H29v6a1.5 1.5 0 0 1-2.4 1.2L17 24H7.5A1.5 1.5 0 0 1 6 22.5v-15ZM9 9v12h8.5c.32 0 .64.1.9.3L26 27v-6h5V9H9Zm60.5 3a1.5 1.5 0 0 0 0 3h13a1.5 1.5 0 0 0 0-3h-13ZM68 18.5c0-.83.67-1.5 1.5-1.5h8a1.5 1.5 0 0 1 0 3h-8a1.5 1.5 0 0 1-1.5-1.5ZM87.5 7c.83 0 1.5.67 1.5 1.5v16c0 .83-.67 1.5-1.5 1.5H76.42l-7.15 4.29A1.5 1.5 0 0 1 67 29v-3h-2.5a1.5 1.5 0 0 1-1.5-1.5v-16c0-.83.67-1.5 1.5-1.5h23ZM86 23V10H66v13h4v3.35l5.23-3.14c.23-.14.5-.21.77-.21h10Zm-42.5 4a1.5 1.5 0 0 0 0 3h9a1.5 1.5 0 0 0 0-3h-9ZM59 22.5c0-.83-.67-1.5-1.5-1.5h-19c-.83 0-1.5.67-1.5 1.5v12c0 .83.67 1.5 1.5 1.5H41v4.5a1.5 1.5 0 0 0 2.56 1.06L49.12 36h8.38c.83 0 1.5-.67 1.5-1.5v-12ZM40 24h16v9h-8.12L44 36.88V33h-4v-9Z"
+                                opacity=".35"></path></svg
+                        ><span class="font-bold">Engineering <br />leaders</span>
+                    </div>
+                </div>
+                <div class="bill mt-[100px] ml-[30px] flex gap-4 text-white">
+                    <p>Annual billing discount</p>
+                    <div class="button h-[29px] w-12 rounded-full border-2 bg-gray-500"></div>
+                    <input type="checkbox" class="checkbox ml-[-60px] mt-[1.7px] h-6 w-6 rounded-full border-2 bg-white" />
+                    <span class="round"></span>
+                </div>
+                <div class="mx-[4px] mt-[30px] flex justify-between gap-2">
+                    <div class="h-[640px] w-[320px] rounded-md border-2 bg-white">
+                        <div class="mt-[25px] ml-[20px] mb-[20px] flex h-[35px] w-[48px] justify-center rounded-md bg-orange-500 text-white">
+                            <span class="mt-[4px]">Free</span>
+                        </div>
+                        <span class="mx-7 text-[31px] font-bold">Free</span><br />
+                        <span class="mx-[30px] text-[15px] text-gray-500">No credit card required</span>
+                        <div class="mx-[18px] mt-[15px] w-[280px] border-[0.5px] border-orange-400"></div>
+                        <div class="ml-[15px]">
+                            <div class="my-[15px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconBullhorn mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path
+                                        d="M16 1a1 1 0 0 0-1 1v.38L5.3 6A2 2 0 0 0 4 7.9v2.22a2 2 0 0 0 1 1.74v1.65a3.5 3.5 0 0 0 6.87.95L15 15.63V16a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1ZM6.6 12.47l3.76 1.42a1.9 1.9 0 0 1-3.76-.39v-1.03ZM2 6a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V7a1 1 0 0 0-1-1Z"></path></svg
+                                >ChatOps integrations - Slack & Microsoft Teams
+                            </div>
+                            <div class="my-[15px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconShield mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path
+                                        d="m2 4 7-3 7 3v5.02C16 13.69 10.69 17 9 17c-1.69 0-7-3.31-7-7.98V4Zm6.14 5.2L7 12h4L9.86 9.2a.58.58 0 0 1 .25-.59c.56-.36.89-.95.89-1.61 0-1.09-.94-2-2.02-2A2 2 0 0 0 7 7c0 .66.33 1.25.89 1.61.2.13.3.36.25.59Z"></path></svg
+                                >Your own private space hosted on stackoverflowteams.com
+                            </div>
+                            <div class="my-[15px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconArchive mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M3 1a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2H3ZM2 5h14v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5Zm4 3a1 1 0 0 0 1 1h4a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z"></path></svg
+                                >Structured and searchable knowledge base
+                            </div>
+                        </div>
+                        <div class="button mt-[170px] flex items-center justify-center text-white">
+                            <a href="" class="w-[270px]"><button class="button mb-3 h-[43px] w-[270px] rounded-md bg-orange-600 font-medium hover:bg-orange-800">Create a free Team</button></a>
+                        </div>
+                        <span class="flex justify-center text-gray-500">Always free up to 50 teammates</span>
+                    </div>
+                    <div class="h-[640px] w-[320px] rounded-md border-2 bg-white">
+                        <div class="mt-[25px] ml-[20px] mb-[20px] flex h-[35px] w-[48px] justify-center rounded-md bg-gray-400 text-white">
+                            <span class="mt-[4px]">Basic</span>
+                        </div>
+                        <span class="mx-7 text-[31px] font-bold">$7 USD</span><br />
+                        <span class="mx-[30px] text-[15px] text-gray-500">per teammate / month </span>
+                        <div class="mx-[18px] mt-[15px] w-[280px] border-[0.5px] border-gray-200"></div>
+                        <div class="ml-[15px]">
+                            <div class="my-[11px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconKey mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M17 5.5a4.5 4.5 0 0 1-5.8 4.3L10 11H8v2H6v2H4v2H1v-3.5l7.1-7.1A4.52 4.52 0 0 1 12.5 1 4.5 4.5 0 0 1 17 5.5Zm-4 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg
+                                >Single sign-on (SSO) with SAML + Okta integration
+                            </div>
+                            <div class="my-[11px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconBullhorn mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path
+                                        d="M16 1a1 1 0 0 0-1 1v.38L5.3 6A2 2 0 0 0 4 7.9v2.22a2 2 0 0 0 1 1.74v1.65a3.5 3.5 0 0 0 6.87.95L15 15.63V16a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1ZM6.6 12.47l3.76 1.42a1.9 1.9 0 0 1-3.76-.39v-1.03ZM2 6a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V7a1 1 0 0 0-1-1Z"></path></svg
+                                >ChatOps integrations - Slack & Microsoft Teams
+                            </div>
+                            <div class="my-[11px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconShield mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path
+                                        d="m2 4 7-3 7 3v5.02C16 13.69 10.69 17 9 17c-1.69 0-7-3.31-7-7.98V4Zm6.14 5.2L7 12h4L9.86 9.2a.58.58 0 0 1 .25-.59c.56-.36.89-.95.89-1.61 0-1.09-.94-2-2.02-2A2 2 0 0 0 7 7c0 .66.33 1.25.89 1.61.2.13.3.36.25.59Z"></path></svg
+                                >Your own private space hosted on stackoverflowteams.com
+                            </div>
+                            <div class="my-[11px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconArchive mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M3 1a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2H3ZM2 5h14v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5Zm4 3a1 1 0 0 0 1 1h4a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z"></path></svg
+                                >Structured and searchable knowledge base
+                            </div>
+                        </div>
+                        <div class="button mt-[118px] flex items-center justify-center text-white">
+                            <a href="" class="w-[270px]"><button class="button mb-3 h-[43px] w-[270px] rounded-md bg-gray-400 font-medium hover:bg-gray-500">Get started</button></a>
+                        </div>
+                        <span class="flex justify-center text-gray-500">Up to 250 teammates</span>
+                    </div>
+                    <div class="mt-[-50px] h-[693px] w-[330px] rounded-md border-2 bg-gray-200">
+                        <div class="ml-[-2.1px] mt-[-2.9px] h-[42px] w-[330px] rounded-md bg-gray-300">
+                            <span class="mx-2">RECOMMENDED</span>
+                            <svg class="ml-[280px] mt-[-19px] h-6 w-8" style="fill: black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 176">
+                                <path
+                                    d="M155.706,176c-0.001,0-0.003,0-0.005,0l-65.411-0.125H20.294c-1.381,0-2.5-1.119-2.5-2.5V60.904
                             c0-1.381,1.119-2.5,2.5-2.5h34.911V2.5c0-1.381,1.119-2.5,2.5-2.5h98c1.381,0,2.5,1.119,2.5,2.5v171c0,0.664-0.264,1.3-0.734,1.77
                             C157.003,175.737,156.368,176,155.706,176z M92.794,170.88l60.411,0.115V5h-93v53.404h30.089c1.381,0,2.5,1.119,2.5,2.5V170.88z
                             M22.794,170.875h65V63.404h-65V170.875z M80.076,154.634H60.297c-1.381,0-2.5-1.119-2.5-2.5v-11.575c0-1.381,1.119-2.5,2.5-2.5
@@ -375,364 +532,595 @@
 	                        c-1.381,0-2.5-1.119-2.5-2.5V15.904c0-1.381,1.119-2.5,2.5-2.5h9.563c1.381,0,2.5,1.119,2.5,2.5v10.392
 	                        C113.635,27.676,112.516,28.795,111.135,28.795z M104.072,23.795h4.563v-5.392h-4.563V23.795z M83.555,28.795h-9.563
 	                        c-1.381,0-2.5-1.119-2.5-2.5V15.904c0-1.381,1.119-2.5,2.5-2.5h9.563c1.381,0,2.5,1.119,2.5,2.5v10.392
-	                        C86.055,27.676,84.936,28.795,83.555,28.795z M76.493,23.795h4.563v-5.392h-4.563V23.795z"/>
+	                        C86.055,27.676,84.936,28.795,83.555,28.795z M76.493,23.795h4.563v-5.392h-4.563V23.795z" />
                             </svg>
+                        </div>
+                        <div class="mt-[34px] ml-[20px] mb-[20px] flex h-[35px] w-[78px] justify-center rounded-md bg-gray-800 text-white">
+                            <span class="mt-[6px]">Business</span>
+                        </div>
+                        <span class="mx-7 text-[31px] font-bold">$14 USD</span><br />
+                        <span class="mx-[30px] text-[15px] text-gray-500">per teammate / month </span>
+                        <div class="mx-[18px] mt-[15px] w-[280px] border-[0.5px] border-gray-300"></div>
+                        <div class="ml-[15px]">
+                            <div class="mt-[18px] h-[50px] w-[285px] text-[15px]">
+                                <span class="flex text-gray-500"
+                                    ><svg aria-hidden="true" class="svg-icon iconPlus mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                        <path d="M10 2H8v6H2v2h6v6h2v-6h6V8h-6V2Z"></path></svg
+                                    >All the features of Basic plus…</span
+                                >
+                            </div>
+                            <div class="my-[1.5px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconDocumentAlt mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path
+                                        d="M5 3a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5Zm2 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-2 4.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm.5 1.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1 0-1ZM5 14.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Z"></path>
+                                    <path opacity=".4" d="M5.9 2h6.35A2.75 2.75 0 0 1 15 4.75v9.35c.62-.6 1-1.43 1-2.35v-7.5C16 2.45 14.54 1 12.75 1h-4.5c-.92 0-1.75.38-2.35 1Z"></path></svg
+                                >Long-form knowledge with Articles
+                            </div>
+                            <div class="my-[1.5px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconLink mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M7.22 11.83a6 6 0 0 0 1.62.85l.61-1.8a4.1 4.1 0 1 1 4.04-.8l1.26 1.42a6 6 0 1 0-7.53.33Zm3.43-5.6a6 6 0 0 0-1.6-.87L8.4 7.15a4.1 4.1 0 1 1-4.05.73L3.12 6.43a6 6 0 1 0 7.53-.2Z"></path></svg
+                                >Additional integrations — ChatOps, Jira, GitHub & Okta
+                            </div>
+                            <div class="my-[1.5px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconCollection mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path
+                                        d="M5 3a2 2 0 0 0-2 2v7c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5Zm0 2.5c0-.28.22-.5.5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5ZM5.5 8h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1ZM5 11.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Z"></path>
+                                    <path opacity=".4" d="M15.09 15H4.74A2.75 2.75 0 0 1 2 12.23V4.9c-.61.59-1 1.42-1 2.34v5.5C1 14.54 2.45 16 4.24 16h8.5c.92 0 1.76-.38 2.35-1Z"></path></svg
+                                >Group content together into Collections
+                            </div>
+                            <div class="my-[1.5px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconGraph mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M3 1h12c1.09 0 2 .91 2 2v12c0 1.09-.91 2-2 2H3c-1.09 0-2-.91-2-2V3c0-1.1.9-2 2-2Zm1 8v5h2V9H4Zm4-5v10h2V4H8Zm4 3v7h2V7h-2Z"></path></svg
+                                >Usage and adoption metrics
+                            </div>
+                            <div class="my-[1.5px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconHealth mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M9 1 2 4v5.02C2 13.69 7.31 17 9 17c1.69 0 7-3.31 7-7.98V4L9 1Zm1 9v3H8v-3H5V8h3V5h2v3h3v2h-3Z"></path></svg
+                                >Priority customer support
+                            </div>
+                            <div class="mt-[1.5px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconTool mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M4.2 1.33a4.99 4.99 0 0 1 6.47 6.47L17 14.13l-2.88 2.88-6.34-6.34a4.99 4.99 0 0 1-6.45-6.45l3.22 3.2 2.88-2.87L4.2 1.33Z"></path></svg
+                                >Content Health tools
+                            </div>
+                        </div>
+                        <div class="button mt-[-13px] flex items-center justify-center text-white">
+                            <a href="" class="w-[270px]"><button class="button mb-3 h-[43px] w-[270px] rounded-md bg-gray-900 font-medium hover:bg-gray-600">Get started</button></a>
+                        </div>
+                        <span class="flex justify-center text-gray-500">Unlimited teammates</span>
                     </div>
-                    <div class=" text-white mt-[34px] flex justify-center   ml-[20px] mb-[20px] bg-gray-800 h-[35px] w-[78px] rounded-md">
-                        <span class="mt-[6px]">Business</span>
+                    <div class="h-[640px] w-[320px] rounded-md border-2 bg-white">
+                        <div class="mt-[25px] ml-[20px] mb-[20px] flex h-[35px] w-[88px] justify-center rounded-md bg-blue-900 text-white">
+                            <span class="mt-[4px]">Enterprise</span>
+                        </div>
+                        <span class="mx-7 text-[31px] font-bold">Custom pricing</span><br />
+                        <span class="mx-[30px] text-[15px] text-gray-500">Let's talk about what you need</span>
+                        <div class="mx-[18px] mt-[15px] w-[280px] border-[0.5px] border-gray-200"></div>
+                        <div class="ml-[15px]">
+                            <div class="mt-[20px] h-[50px] w-[285px]">
+                                <span class="flex text-[14.5px] text-gray-500"
+                                    ><svg aria-hidden="true" class="svg-icon iconPlus mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                        <path d="M10 2H8v6H2v2h6v6h2v-6h6V8h-6V2Z"></path></svg
+                                    >Premium features of Business plus…</span
+                                >
+                            </div>
+                            <div class="my-[4px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconPeople mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path
+                                        d="M17 14c0 .44-.45 1-1 1H9a1 1 0 0 1-1-1H2c-.54 0-1-.56-1-1 0-2.63 3-4 3-4s.23-.4 0-1c-.84-.62-1.06-.59-1-3 .06-2.42 1.37-3 2.5-3s2.44.58 2.5 3c.06 2.41-.16 2.38-1 3-.23.59 0 1 0 1s1.55.71 2.42 2.09c.78-.72 1.58-1.1 1.58-1.1s.23-.4 0-1c-.84-.61-1.06-.58-1-3 .06-2.41 1.37-3 2.5-3s2.44.59 2.5 3c.05 2.42-.16 2.39-1 3-.23.6 0 1 0 1s3 1.38 3 4Z"></path></svg
+                                >Unlimited Teams within your instance
+                            </div>
+                            <div class="my-[4px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconPeak mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M10.5 3.5 8 7.25l2 2.25L8.5 11l-3-3.5L1 14h16L10.5 3.5Z"></path></svg
+                                >Flexible hosting options — cloud or on-premises
+                            </div>
+                            <div class="my-[4px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconCode mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M8 4.41 6.59 3l-6 6 6 6L8 13.59 3.41 9 8 4.41Zm2 0L11.41 3l6 6-6 6L10 13.59 14.59 9 10 4.41Z"></path></svg
+                                >Robust read and write API
+                            </div>
+                            <div class="my-[4px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconSpeechBubbleQuestion mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path
+                                        d="m1 18 3-3h11c1.09 0 2-.91 2-2V4c0-1.09-.91-2-2-2H3a2 2 0 0 0-2 2v14Zm7.96-4.94c-.57-.02-1.03-.43-1.01-1.06.02-.63.5-1.04 1.08-1.02.6.02 1.05.45 1.03 1.08-.02.63-.48 1.02-1.1 1Zm.92-3.68a3.6 3.6 0 0 0-.08.65c0 .04-.03.14-.16.14h-1.4c-.14 0-.16-.09-.16-.13-.01-.5.11-.99.36-1.42.2-.36.58-.65 1.06-.93.41-.23.78-.71.78-1.2 0-.27-.09-.53-.26-.74-.22-.26-.46-.4-.92-.4-.45 0-.83.23-1.02.52-.17.27-.16.55-.16.83v.11H6.2c0-1.17.31-1.92.98-2.36a3.5 3.5 0 0 1 1.83-.44c.88 0 1.58.16 2.2.62.58.42.88 1.02.88 1.82 0 .5-.17.9-.43 1.24-.15.2-.44.47-.86.8l-.48.3c-.2.14-.36.35-.44.6Z"></path></svg
+                                >Your own customer success and community building representative
+                            </div>
+                            <div class="my-[4px] flex h-[50px] w-[285px] text-[14.5px]">
+                                <svg aria-hidden="true" class="svg-icon iconHealth mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M9 1 2 4v5.02C2 13.69 7.31 17 9 17c1.69 0 7-3.31 7-7.98V4L9 1Zm1 9v3H8v-3H5V8h3V5h2v3h3v2h-3Z"></path></svg
+                                >99.5% uptime SLA and priority support
+                            </div>
+                        </div>
+                        <div class="button mt-[21px] flex items-center justify-center text-white">
+                            <a href="" class="w-[270px]"><button class="button mb-3 h-[43px] w-[270px] rounded-md bg-blue-800 font-medium hover:bg-blue-900">Request a demo</button></a>
+                        </div>
+                        <span class="flex justify-center text-gray-500">Unlimited teammates</span>
                     </div>
-                    <span class="mx-7 text-[31px] font-bold ">$14 USD</span><br>
-                    <span class="mx-[30px] text-gray-500 text-[15px]">per teammate / month </span>
-                    <div class="border-[0.5px] mx-[18px] mt-[15px] border-gray-300 w-[280px]"></div>
-                    <div class="ml-[15px]">
-                        <div  class="text-[15px]  w-[285px] h-[50px] mt-[18px] "><span class="text-gray-500  flex"><svg aria-hidden="true" class="svg-icon iconPlus  mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M10 2H8v6H2v2h6v6h2v-6h6V8h-6V2Z"></path></svg>All the features of Basic plus…</span>
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px] my-[1.5px] flex"><svg aria-hidden="true" class=" mr-[10px] mt-[4px] svg-icon iconDocumentAlt" width="18" height="18" viewBox="0 0 18 18"><path d="M5 3a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5Zm2 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-2 4.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm.5 1.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1 0-1ZM5 14.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Z"></path><path opacity=".4" d="M5.9 2h6.35A2.75 2.75 0 0 1 15 4.75v9.35c.62-.6 1-1.43 1-2.35v-7.5C16 2.45 14.54 1 12.75 1h-4.5c-.92 0-1.75.38-2.35 1Z"></path></svg>Long-form knowledge with Articles
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px] my-[1.5px] flex"><svg aria-hidden="true" class="svg-icon iconLink mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M7.22 11.83a6 6 0 0 0 1.62.85l.61-1.8a4.1 4.1 0 1 1 4.04-.8l1.26 1.42a6 6 0 1 0-7.53.33Zm3.43-5.6a6 6 0 0 0-1.6-.87L8.4 7.15a4.1 4.1 0 1 1-4.05.73L3.12 6.43a6 6 0 1 0 7.53-.2Z"></path></svg>Additional integrations — ChatOps, Jira, GitHub & Okta
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px] my-[1.5px] flex"><svg aria-hidden="true" class="svg-icon iconCollection mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M5 3a2 2 0 0 0-2 2v7c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5Zm0 2.5c0-.28.22-.5.5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5ZM5.5 8h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1ZM5 11.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Z"></path><path opacity=".4" d="M15.09 15H4.74A2.75 2.75 0 0 1 2 12.23V4.9c-.61.59-1 1.42-1 2.34v5.5C1 14.54 2.45 16 4.24 16h8.5c.92 0 1.76-.38 2.35-1Z"></path></svg>Group content together into Collections
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px] my-[1.5px] flex"><svg aria-hidden="true" class="svg-icon iconGraph mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M3 1h12c1.09 0 2 .91 2 2v12c0 1.09-.91 2-2 2H3c-1.09 0-2-.91-2-2V3c0-1.1.9-2 2-2Zm1 8v5h2V9H4Zm4-5v10h2V4H8Zm4 3v7h2V7h-2Z"></path></svg>Usage and adoption metrics
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px] my-[1.5px] flex"><svg aria-hidden="true" class="svg-icon iconHealth mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M9 1 2 4v5.02C2 13.69 7.31 17 9 17c1.69 0 7-3.31 7-7.98V4L9 1Zm1 9v3H8v-3H5V8h3V5h2v3h3v2h-3Z"></path></svg>Priority customer support
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px] mt-[1.5px] flex"><svg aria-hidden="true" class="svg-icon iconTool mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M4.2 1.33a4.99 4.99 0 0 1 6.47 6.47L17 14.13l-2.88 2.88-6.34-6.34a4.99 4.99 0 0 1-6.45-6.45l3.22 3.2 2.88-2.87L4.2 1.33Z"></path></svg>Content Health tools
-                        </div>
-                    </div>
-                    <div class="button flex justify-center items-center  text-white mt-[-13px]">
-                        <a href=""  class=" w-[270px]  "><button class=" button hover:bg-gray-600 h-[43px] rounded-md w-[270px] mb-3 bg-gray-900 font-medium">Get started </button></a>
-                    </div>
-                    <span class="flex justify-center text-gray-500">Unlimited teammates</span>
                 </div>
-                  <div class="bg-white h-[640px] w-[320px] border-2 rounded-md">
-                    <div class=" text-white mt-[25px] flex justify-center  ml-[20px] mb-[20px] bg-blue-900 h-[35px] w-[88px] rounded-md">
-                        <span class="mt-[4px]">Enterprise</span>
+                <div class="mx-[35px] mt-[59px] flex gap-7 text-white">
+                    <div class="h-[160px] w-[300px] rounded-md border-2 border-gray-600 p-[22px] text-center text-[16px] leading-[24px]">
+                        A Forrester Consulting study <br />
+                        shows<span class="text-[22px] font-bold text-blue-400">
+                            191% return on <br />
+                            investment</span
+                        >
+                        with Stack Overflow for Teams.
                     </div>
-                    <span class="mx-7 text-[31px] font-bold ">Custom pricing</span><br>
-                    <span class="mx-[30px] text-gray-500 text-[15px]">Let's talk about what you need</span>
-                    <div class="border-[0.5px] mx-[18px] mt-[15px] border-gray-200 w-[280px]"></div>
-                    <div class="ml-[15px]">
-                        <div  class="  w-[285px] h-[50px]  mt-[20px]"><span class="text-gray-500 text-[14.5px] flex"><svg aria-hidden="true" class="svg-icon iconPlus  mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M10 2H8v6H2v2h6v6h2v-6h6V8h-6V2Z"></path></svg>Premium features of Business plus…</span>
-                         </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px]  my-[4px] flex"><svg aria-hidden="true" class="svg-icon iconPeople mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M17 14c0 .44-.45 1-1 1H9a1 1 0 0 1-1-1H2c-.54 0-1-.56-1-1 0-2.63 3-4 3-4s.23-.4 0-1c-.84-.62-1.06-.59-1-3 .06-2.42 1.37-3 2.5-3s2.44.58 2.5 3c.06 2.41-.16 2.38-1 3-.23.59 0 1 0 1s1.55.71 2.42 2.09c.78-.72 1.58-1.1 1.58-1.1s.23-.4 0-1c-.84-.61-1.06-.58-1-3 .06-2.41 1.37-3 2.5-3s2.44.59 2.5 3c.05 2.42-.16 2.39-1 3-.23.6 0 1 0 1s3 1.38 3 4Z"></path></svg>Unlimited Teams within your instance
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px]  my-[4px] flex"><svg aria-hidden="true" class="svg-icon iconPeak mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M10.5 3.5 8 7.25l2 2.25L8.5 11l-3-3.5L1 14h16L10.5 3.5Z"></path></svg>Flexible hosting options — cloud or on-premises
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px]  my-[4px] flex"><svg aria-hidden="true" class="svg-icon iconCode mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M8 4.41 6.59 3l-6 6 6 6L8 13.59 3.41 9 8 4.41Zm2 0L11.41 3l6 6-6 6L10 13.59 14.59 9 10 4.41Z"></path></svg>Robust read and write API
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px]  my-[4px] flex"><svg aria-hidden="true" class="svg-icon iconSpeechBubbleQuestion  mr-[10px] mt-[4px] " width="18" height="18" viewBox="0 0 18 18"><path d="m1 18 3-3h11c1.09 0 2-.91 2-2V4c0-1.09-.91-2-2-2H3a2 2 0 0 0-2 2v14Zm7.96-4.94c-.57-.02-1.03-.43-1.01-1.06.02-.63.5-1.04 1.08-1.02.6.02 1.05.45 1.03 1.08-.02.63-.48 1.02-1.1 1Zm.92-3.68a3.6 3.6 0 0 0-.08.65c0 .04-.03.14-.16.14h-1.4c-.14 0-.16-.09-.16-.13-.01-.5.11-.99.36-1.42.2-.36.58-.65 1.06-.93.41-.23.78-.71.78-1.2 0-.27-.09-.53-.26-.74-.22-.26-.46-.4-.92-.4-.45 0-.83.23-1.02.52-.17.27-.16.55-.16.83v.11H6.2c0-1.17.31-1.92.98-2.36a3.5 3.5 0 0 1 1.83-.44c.88 0 1.58.16 2.2.62.58.42.88 1.02.88 1.82 0 .5-.17.9-.43 1.24-.15.2-.44.47-.86.8l-.48.3c-.2.14-.36.35-.44.6Z"></path></svg>Your own customer success and community building representative
-                        </div>
-                        <div class="text-[14.5px]  w-[285px] h-[50px]  my-[4px] flex"><svg aria-hidden="true" class="svg-icon iconHealth  mr-[10px] mt-[4px]" width="18" height="18" viewBox="0 0 18 18"><path d="M9 1 2 4v5.02C2 13.69 7.31 17 9 17c1.69 0 7-3.31 7-7.98V4L9 1Zm1 9v3H8v-3H5V8h3V5h2v3h3v2h-3Z"></path></svg>99.5% uptime SLA and priority support
-                        </div>
+                    <div class="h-[160px] w-[300px] rounded-md border-2 border-gray-600 p-[22px] text-center text-[16px] leading-[24px]">
+                        The world's largest telecom firm <br />
+                        <span class="text-[22px] font-bold text-blue-400">saved $10M</span>
+                        in deflected <br />
+                        support cases with our <br />centralized knowledge base.
                     </div>
-                    <div class="button flex justify-center items-center  text-white mt-[21px]">
-                        <a href=""  class=" w-[270px]  "><button class=" button hover:bg-blue-900 h-[43px] rounded-md w-[270px] mb-3 bg-blue-800 font-medium">Request a demo </button></a>
+                    <div class="h-[160px] w-[300px] rounded-md border-2 border-gray-600 p-[22px] text-center text-[16px] leading-[24px]">
+                        Subject-matter experts at <br />
+                        software platform Unqork had <br />
+                        <span class="text-[22px] font-bold text-blue-400">27% more time</span>
+                        to work <br />
+                        on projects after using Teams.
                     </div>
-                    <span class="flex justify-center text-gray-500">Unlimited teammates</span>
-                </div>
-            </div>   
-            <div class=" text-white flex mt-[59px]  gap-7 mx-[35px]">
-                    <div class="border-2 rounded-md border-gray-600 p-[22px] h-[160px] w-[300px] text-[16px] text-center leading-[24px]">
-                        A Forrester Consulting study <br> shows<span class="font-bold text-blue-400 text-[22px]">  191% return on <br> investment</span> with Stack Overflow for Teams.
-                    </div>
-                    <div class="border-2 rounded-md border-gray-600 p-[22px] h-[160px] w-[300px] text-[16px] text-center leading-[24px]">
-                        The world's largest telecom firm <br> <span class="font-bold text-blue-400 text-[22px]">saved $10M</span> in deflected <br> support cases with our <br>centralized knowledge base.
-                    </div>
-                    <div class="border-2 rounded-md border-gray-600 p-[22px] h-[160px] w-[300px] text-[16px] text-center leading-[24px]">
-                        Subject-matter experts at <br> software platform Unqork had <br> <span class="font-bold text-blue-400 text-[22px]">27% more time</span> to work <br> on projects after using Teams.
-                    </div>
-                    <a href="" class="border-2 p-[20px] rounded-md border-gray-600  h-[160px] w-[300px] text-[16px] text-center leading-[24px] hover:shadow-md hover:shadow-black">
-                        <span class="">You can save time and money <br> with Stack Overflow for Teams</span>
-                        <button class="button  hover:bg-gray-700 h-[40px] rounded-md w-[170px] mb-3 border-2 border-blue-400 text-blue-400 font-medium mt-[20px]">Calculate your ROI</button>
+                    <a href="" class="h-[160px] w-[300px] rounded-md border-2 border-gray-600 p-[20px] text-center text-[16px] leading-[24px] hover:shadow-md hover:shadow-black">
+                        <span class=""
+                            >You can save time and money <br />
+                            with Stack Overflow for Teams</span
+                        >
+                        <button class="button mb-3 mt-[20px] h-[40px] w-[170px] rounded-md border-2 border-blue-400 font-medium text-blue-400 hover:bg-gray-700">Calculate your ROI</button>
                     </a>
-            </div>
-            <div class=" flex mt-[70px]">
-                <a href="" class="">
-                    <img src="images/question.png" alt="asking question image" class="h-[450px] w-[400px]">
-                    <div class="flex text-white gap-2 w-fit ml-[120px]">
-                        <img src="images/microsoft teams (1).png" alt="microsoft teams logo" class="h-[40px]">
-                        <p class="mt-[5px]">Microsoft Teams</p>
-                    </div>
-                </a>
-                <div class="text-center text-white ml-[30px] mt-[100px]" >
-                    <span class="font-bold text-[32px]">Integrates with and improves other <br> tools</span>
-                    <p class="mt-3 text-gray-400 text-[17px]">
-                        All plans come with integrations for ChatOps tools <a href="" class="text-blue-400">Slack</a>  & <a       href="" class="text-blue-400"> Microsoft <br> Teams</a> in order to cut down on pings, limit distractions and make the <br> tools even more powerful. Business and Enterprise customers get access <br> to Jira, GitHub & Okta integrations.
-                    </p> 
-                    <div class="flex  mt-7 justify-center gap-5 ">
-                        <a href=""><img class="bg-white rounded-lg  h-[70px]" src="images/slack.png" title="Slack" alt="Slack"></a>
-                       <a href=""> <img class="bg-white rounded-lg h-[70px]" src="images/microsoft teams (1).png" title="Microsoft Teams" alt="Microsoft Teams"></a>
-                       <a href=""> <img class="bg-white rounded-lg h-[70px]" src="images/github.png" title="GitHub" alt="GitHub"></a>
-                      <a href="">  <img class="bg-whiterounded-lg h-[70px]" src="images/jjra.png" title="Jira" alt="Jira"></a>
-                      <a href="">  <img class="bg-whiterounded-lg h-[70px]" src="images/okta.png" title="Okta "alt="Okta"></a>
-
-                    </div>
                 </div>
-                <div>
+                <div class="mt-[70px] flex">
                     <a href="" class="">
-                        <img src="images/ans.png" alt="answering question image" class="h-[450px] w-[400px]">
-                    </a>
-                </div>
-            </div>
-            <div class="text-center text-gray-400 text-[18px] mt-[31px]">
-                <p>
-                    Some of the premium features available with paid tiers
-                 </p>
-            </div>
-        </div>
-
-        <div class="flex  justify-center gap-6 mt-[-60px]">
-            <div class=" h-[160px] w-[220px] p-[20px] rounded-lg text-center bg-gray-300">
-                <svg aria-hidden="true" class="mb-3 mx-auto mb12 svg-spot spotKey" width="48" fill="#00008B" height="48" viewBox="0 0 48 48"><path opacity=".2" d="m43.05 15.18-22.29 9.35a9.1 9.1 0 0 0-10.87-3 9 9 0 0 0-4.82 11.79 9 9 0 0 0 17.17-5.2l12.28-5.22 1.5 3.57c.2.47.7.68 1.18.48l1.65-.7c.46-.19.67-.7.48-1.16l-1.5-3.58 1.92-.8 2.08 4.94c.2.47.7.68 1.17.48l1.65-.69c.47-.2.68-.7.48-1.17l-2.06-4.9 1.45-.6c.47-.2.67-.7.48-1.18l-.81-1.92a.85.85 0 0 0-1.14-.5ZM15.36 34.86a5.33 5.33 0 1 1-4.14-9.84 5.33 5.33 0 0 1 4.14 9.84Z"></path><path d="M6.82 30.54a5.5 5.5 0 1 0 10.14-4.26 5.5 5.5 0 0 0-10.14 4.26Zm3.72-5.36a3.5 3.5 0 1 1 2.7 6.45 3.5 3.5 0 0 1-2.7-6.45Zm8.74-3.38a10.2 10.2 0 0 0-11.26-2.25 10.06 10.06 0 0 0-5.46 13.14 10.06 10.06 0 0 0 13.2 5.3 10.18 10.18 0 0 0 6.04-10.7l9.66-3.99 1.17 2.78a2 2 0 0 0 2.61 1.07l1.85-.78a2 2 0 0 0 1.07-2.62l-1.2-2.86.63-.27L39.01 24a2 2 0 0 0 2.62 1.07l1.85-.78a2 2 0 0 0 1.07-2.61l-1.47-3.5c.9-.74 1.25-2.02.77-3.15l-.19-.46a2.78 2.78 0 0 0-3.63-1.48l-20.75 8.7Zm-1.12 1.74a1 1 0 0 0 1.23.38l21.41-8.99c.4-.16.85.02 1.02.42l.19.45a.73.73 0 0 1-.37.95 1 1 0 0 0-.75 1.37l1.81 4.33-1.84.77L39.08 19a1 1 0 0 0-.49-.52 1 1 0 0 0-.91-.07l-2.41 1.01a1 1 0 0 0-.55 1.28l.05.14 1.54 3.69-1.84.77-1.55-3.69a1 1 0 0 0-1.3-.53h-.01l-11.3 4.65a1 1 0 0 0-.6 1.16l.02.14A8.2 8.2 0 0 1 15 36.14a8.06 8.06 0 0 1-10.58-4.23A8.06 8.06 0 0 1 8.8 21.4a8.18 8.18 0 0 1 9.36 2.15Z"></path>
-            </svg>Robust read and write <br> API
-            </div>
-            <div class=" h-[160px] w-[225px] p-[20px] rounded-lg text-center bg-gray-300">
-                <svg aria-hidden="true" class="mb-3 mx-auto mb12 svg-spot spotLock" fill="#00008B" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"></path><path d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z"></path></svg>Single sign-on with AD or <br> SAML
-            </div>
-            <div class=" h-[160px] w-[220px] p-[20px] rounded-lg text-center bg-gray-300">
-                <svg aria-hidden="true" class="mb-3  mx-auto mb12 svg-spot spotPeople" width="48" fill="#00008B" height="48" viewBox="0 0 48 48"><path d="M13.5 28a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM7 30a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v5h11v-5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v10a2 2 0 0 1-2 2H33v5a1 1 0 0 1-1 1H20a1 1 0 0 1-1-1v-5H8a1 1 0 0 1-1-1V30Zm25-6.5a4.5 4.5 0 1 0 9 0 4.5 4.5 0 0 0-9 0ZM24.5 34a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z" opacity=".2"></path><path d="M16.4 26.08A6 6 0 1 0 7.53 26C5.64 26.06 4 27.52 4 29.45V40a1 1 0 0 0 1 1h9a1 1 0 1 0 0-2h-4v-7a1 1 0 1 0-2 0v7H6v-9.55c0-.73.67-1.45 1.64-1.45H16a1 1 0 0 0 .4-1.92ZM12 18a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm16.47 14a6 6 0 1 0-8.94 0A3.6 3.6 0 0 0 16 35.5V46a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V35.5c0-1.94-1.64-3.42-3.53-3.5ZM20 28a4 4 0 1 1 8 0 4 4 0 0 1-8 0Zm-.3 6h8.6c1 0 1.7.75 1.7 1.5V45h-2v-7a1 1 0 1 0-2 0v7h-4v-7a1 1 0 1 0-2 0v7h-2v-9.5c0-.75.7-1.5 1.7-1.5ZM42 22c0 1.54-.58 2.94-1.53 4A3.5 3.5 0 0 1 44 29.45V40a1 1 0 0 1-1 1h-9a1 1 0 1 1 0-2h4v-7a1 1 0 1 1 2 0v7h2v-9.55A1.5 1.5 0 0 0 40.48 28H32a1 1 0 0 1-.4-1.92A6 6 0 1 1 42 22Zm-2 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"></path><g opacity=".35"><path d="M17 10a1 1 0 011-1h12a1 1 0 110 2H18a1 1 0 01-1-1Zm1-5a1 1 0 100 2h12a1 1 0 100-2H18ZM14 1a1 1 0 00-1 1v12a1 1 0 001 1h5.09l4.2 4.2a1 1 0 001.46-.04l3.7-4.16H34a1 1 0 001-1V2a1 1 0 00-1-1H14Zm1 12V3h18v10h-5a1 1 0 00-.75.34l-3.3 3.7-3.74-3.75a1 1 0 00-.71-.29H15Z"></path></g></svg>Your own customer <br> success representative
-            </div>
-            <div class=" h-[160px] w-[220px] p-[20px] rounded-lg text-center bg-gray-300">
-                <svg aria-hidden="true" class="mb-3 mx-auto mb12        svg-spot spotHeadset" width="48" height="48" fill="#00008B" viewBox="0 0 48 48"><path d="M33.8 7.06a19.9 19.9 0 0 0-8.42-2.4 19.57 19.57 0 0 0-8.57 1.62c-.2.14-.25.37-.12.6l2.25 3.97c.12.19.4.34.65.34a.7.7 0 0 0 .17-.03c.53-.12 3.52-.8 5.4-.72 1.9.09 4.89 1.07 5.32 1.22l.11.03c.23.03.52-.05.66-.28l2.61-3.74c.14-.22.12-.46-.07-.61ZM8 39.52c0 2.24 1.8 4.06 4 4.06 1.11 0 2.04-.93 2.04-2v-9.53c0-1.12-.93-2.05-2.03-2.05A4.04 4.04 0 0 0 8 34.06v5.46Zm32.03 4.06c2.2 0 4-1.82 4-4.06v-5.46c0-2.24-1.8-4.06-4-4.06-1.1 0-2.03.93-2.03 2.05v9.52c0 1.08.92 2 2.03 2ZM23 48h4a2 2 0 0 0 0-4h-4a2 2 0 0 0 0 4Z" opacity=".2"></path><path d="M13.66 5.54C8.04 8.6 4 14.24 4 21v12h1v-1.11A4.94 4.94 0 0 1 9.98 27 3 3 0 0 1 13 29.97v9.1A3 3 0 0 1 9.98 42a4.97 4.97 0 0 1-4.9-4H3.33C1.93 38 1 36.77 1 35.5c0-.8.37-1.59 1-2.06V21C2 9.34 12.57 1 23.5 1S45 9.34 45 21v11.44c.63.47 1 1.26 1 2.06 0 1.27-.94 2.5-2.33 2.5H42v.11a4.89 4.89 0 0 1-3.07 4.52A1 1 0 0 1 39 42a2.88 2.88 0 0 1-3 3h-8.17A3 3 0 0 1 25 47h-4a3 3 0 0 1 0-6h4a3 3 0 0 1 2.83 2H36c.46 0 .66-.16.78-.3.14-.2.22-.46.22-.7a3 3 0 0 1-3-2.92v-9.11A3 3 0 0 1 37.02 27 4.94 4.94 0 0 1 42 31.89V32h1V21c0-6.51-3.75-11.97-9.04-15.1a1 1 0 0 1-.03.05l-1.16 1.68c2.42 1.57 4.44 3.1 5.87 5.16C40.22 15.1 41 17.93 41 22a1 1 0 1 1-2 0c0-3.8-.72-6.2-2.01-8.07-1.2-1.74-2.96-3.1-5.36-4.66l-.71 1.04a1 1 0 0 1-1.17.37c-1.83-.68-3.7-.94-5.82-.94-2.1 0-4 .3-5.84.94a1 1 0 0 1-1.15-.38l-.98-1.41c-2.7 1.73-4.65 3.16-5.95 5.04C8.72 15.8 8 18.2 8 22a1 1 0 1 1-2 0c0-4.07.78-6.91 2.36-9.2 1.54-2.23 3.78-3.84 6.47-5.56l-1.15-1.67a1 1 0 0 1-.02-.03Zm1.82-.89 2.68 3.9a19.7 19.7 0 0 1 5.77-.81c2.03 0 3.91.22 5.77.8l2.49-3.59A20.53 20.53 0 0 0 23.5 3c-2.79 0-5.52.59-8.02 1.65ZM25 43h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2ZM7 31.89v5.22A2.94 2.94 0 0 0 9.98 40c.59 0 1.02-.48 1.02-.92v-9.11A1 1 0 0 0 9.98 29 2.94 2.94 0 0 0 7 31.89ZM5 35H3.33c-.05 0-.12.02-.2.1a.6.6 0 0 0-.13.4c0 .17.06.31.14.4.07.08.14.1.2.1H5v-1Zm35-3.11A2.94 2.94 0 0 0 37.02 29a1 1 0 0 0-1.02.97v9.1c0 .45.43.93 1.02.93A2.94 2.94 0 0 0 40 37.11V31.9ZM42 35h1.67c.05 0 .12-.02.2-.1a.6.6 0 0 0 .13-.4.6.6 0 0 0-.14-.4c-.07-.08-.14-.1-.2-.1H42v1Z"></path></svg>99.5% uptime SLA and <br> priority support
-            </div>
-        </div>
-
-        <div class="flex  mt-[100px] gap-12 mx-[89px] text-gray-600  ">
-            <div class="">
-                <div class=" bg-[#F8F9F9] ">
-                    <img src="images/comablue.png" alt="" class=" ml-[-25px]">
-                </div>
-                <p class="text-justify">
-                    Stack Overflow for Teams has been a <br> resource for our entire company. Not <br> only for developers to solve problems,<br> it's also enabled our sales field to <br> answer technical questions that help<br> them close deals.
-                </p>
-                <div class="border-[0.5px] w-[250px] mt-[25px] mb-[15px]"></div>
-                <span class="font-bold ">Director of Product Management <br></span>
-                <span>Microsoft</span> 
-            </div>
-            <div>
-                <div class=" bg-[#F8F9F9]">
-                    <img src="images/comablue.png" alt="" class="ml-[-25px]">
-                </div>
-                <p class="text-justify ">
-                    Engineers should help solve the hardest <br> questions, the unknowns, where being <br> familiar with how the product was built <br> is essential. But we don't want to keep <br> answering solved problems over and <br> over again. That's where Stack Overflow <br> for Teams really helps.
-                </p>
-                <div class="border-[0.5px] w-[180px] mt-[25px] mb-[15px]"></div>
-                <span class="font-bold">Director of Engineering<br></span>
-                <span>  Elastic Cloud</span> 
-            </div>
-            <div>
-                <div class=" bg-[#F8F9F9]">
-                    <img src="images/comablue.png" alt="" class="ml-[-25px]">
-                </div>
-                <p class="text-justify ">
-                    As we started to use [Stack Overflow for<br> Teams] and saw how nice it was to have <br> a repository of information, we started<br> to see it spread to other teams. Our <br>  customer support team started using it ,<br>  our people success team started using<br>  it, next thing we knew, we had [Slack]<br>  integrations all over the place.
-                </p>
-                 <div class="border-[0.5px] w-[90px] mt-[25px] mb-[15px] "></div>
-                <span class="font-bold">Engineering<br></span>
-                <span>Expensify</span>
-            </div>
-            <div>
-                <div class=" bg-[#F8F9F9]">
-                    <img src="images/comablue.png" alt="" class="ml-[-25px]">
-                </div>
-                <p class="text-justify text-[19px] ">
-                    What we love about Stack Overflow <br>  for Teams is that it's a very dynamic <br>  tool…there's just so many ways to <br>  use this as a liaison between <br>  different teams and different <br>  knowledge bases.
-                </p>
-                <div class="border-[0.5px] w-[138px] mt-[25px] mb-[15px] "></div>
-                <span class="font-bold">Software Engineer<br></span>
-                <span>Box</span>
-            </div>
-        </div>
-
-        <div class=" flex h-[800px]  w-full  justify-between mt-[90px] "> 
-            <div>
-                <img src="images/bgleft.png" alt="" class="pt-[30px] h-[400px]">
-            </div>
-            <div class="flex flex-col pt-[30px] gap-9 items-center">
-                <div>
-                    <img src="images/logo1.png" alt="">
-                </div>
-                <div class="border-[0.5px] border-gray-200 w-[190px]"></div>
-                <div>
-                    <p class="text-[30px] text-center">
-                        Additional products that reach and engage <br> developers & technologists…
-                    </p>
-                </div>
-                <div class="flex gap-5">
-                    <a href="" class="hover:shadow-sm hover:shadow-gray-300">
-                        <div class="  h-[170px] border-2 w-[380px] rounded-lg bg-white">
-                            <div class="flex justify-center">
-                                <img src="images/logo2.png" alt="" class=" h-[50px] ml-[-19px] mt-[14px]">
-                                <span class="font-extrabold text-[17px] py-[13px]  mt-[14px]"><span class="text-gray-400 font-light ">|</span> ADVERTISING</span>
-                            </div>
-                            <div>
-                                <p class="text-[18px] text-gray-600 text-center mt-2">
-                                    Reach the world's largest audience of <br> developers and technologists
-                                </p>
-                            </div>
+                        <img src="images/question.png" alt="asking question image" class="h-[450px] w-[400px]" />
+                        <div class="ml-[120px] flex w-fit gap-2 text-white">
+                            <img src="images/microsoft teams (1).png" alt="microsoft teams logo" class="h-[40px]" />
+                            <p class="mt-[5px]">Microsoft Teams</p>
                         </div>
                     </a>
-                    <a href="" class="hover:shadow-sm hover:shadow-gray-300">
-                        <div class="  h-[170px] border-2 w-[380px] rounded-lg bg-white">
-                            <div class="flex justify-center">
-                                <img src="images/logo2.png" alt="" class=" h-[50px] mt-[14px] ml-[-19px]">
-                                <span class="font-extrabold text-[17px]  py-[13px] mt-4  "><span class="text-gray-400 font-light">|</span> COLLECTIVES</span>
-                            </div>
-                            <div>
-                                <p class="text-[18px] text-gray-600 text-center mt-2">
-                                    Connecting communities with the specific <br> technologies they use the most
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <a href="" class="hover:shadow-sm hover:shadow-gray-300">
-                    <div class="  h-[140px] border-2 w-[380px] rounded-lg bg-white">
-                        <div class="flex justify-center">
-                                <img src="images/logo2.png" alt="" class=" h-[50px] mt-[10px]">
-                                <span class="font-extrabold text-[17px]  py-[13px] mt-3 "><span class="text-gray-400 font-light">|</span> TALENT</span>
-                        </div>
-                        <div>
-                                <p class="text-[18px] pl-[40px] text-gray-600 text-center mt-2">
-                                Build your employer brand
-                                </p>
+                    <div class="ml-[30px] mt-[100px] text-center text-white">
+                        <span class="text-[32px] font-bold"
+                            >Integrates with and improves other <br />
+                            tools</span
+                        >
+                        <p class="mt-3 text-[17px] text-gray-400">
+                            All plans come with integrations for ChatOps tools
+                            <a href="" class="text-blue-400">Slack</a> &
+                            <a href="" class="text-blue-400">
+                                Microsoft <br />
+                                Teams</a
+                            >
+                            in order to cut down on pings, limit distractions and make the
+                            <br />
+                            tools even more powerful. Business and Enterprise customers get access <br />
+                            to Jira, GitHub & Okta integrations.
+                        </p>
+                        <div class="mt-7 flex justify-center gap-5">
+                            <a href=""><img class="h-[70px] rounded-lg bg-white" src="images/slack.png" title="Slack" alt="Slack" /></a>
+                            <a href=""> <img class="h-[70px] rounded-lg bg-white" src="images/microsoft teams (1).png" title="Microsoft Teams" alt="Microsoft Teams" /></a>
+                            <a href=""> <img class="h-[70px] rounded-lg bg-white" src="images/github.png" title="GitHub" alt="GitHub" /></a>
+                            <a href=""> <img class="bg-whiterounded-lg h-[70px]" src="images/jjra.png" title="Jira" alt="Jira" /></a>
+                            <a href=""> <img class="bg-whiterounded-lg h-[70px]" src="images/okta.png" title="Okta " alt="Okta" /></a>
                         </div>
                     </div>
-                </a>
-                <div>
-                    <div class="button">
-                                <a href=""  class=" w-[210px]  ">
-                                    <button class=" button hover:bg-orange-700 h-[43px] rounded-md w-[210px] ml-10  bg-orange-500 font-medium text-white">About the company
-                                    </button>
-                                </a>
-                    </div>
-                    <a href="" class="">
-                        <p class="hover:bg-gray-200 text-center text-gray-400 font-semibold  h-[45px] rounded-md pt-2 text-sm  w-[300px] ml-[-9px]">Want to work here? <span class=" font-semibold text-blue-700">Current job openings</span></p>
-                    </a>
-                </div>
-            </div>
-            <div>
-                <img src="images/bgright.png" alt="" class="pt-[46px] h-[400px]">
-            </div>
-        </div>
-
-        <div class="created-clipm2 bg-[#000080] rounded-xl  h-[680px] w-[1375px] mx-[51px]" >
-            <div class="flex justify-around  ">
-                <div>
-                         <svg fill="none" class=" mt-[150px]  " height="330" viewBox="0 0 270 330" width="270" xmlns="http://www.w3.org/2000/svg"><g fill="#0054a3"><rect height="57.8168" rx="5.10149" width="57.8168" x="172.673" y="177"/><rect height="57.8168" rx="5.10149" width="57.8168" x="32" y="76"/><rect height="37.4109" rx="5.10149" width="37.4109" x="102" y="23"/><rect height="37.4109" rx="5.10149" width="37.4109" x="61" y="254"/><rect height="37.4109" rx="5.10149" width="37.4109" x="134.817" y="108"/><rect height="22.6733" rx="5.10149" width="22.6733" x="116" y="195"/><rect height="22.6733" rx="5.10149" width="22.6733" x="202" y="273"/><rect height="22.6733" rx="5.10149" width="22.6733" x="213" y="82"/></g>
-                        </svg>
-                </div>
-                <div class=" flex-col  h-[430px] w-[700px]  mt-[150px]  ">
                     <div>
-                            <svg aria-hidden="true" class=" mx-auto" width="147" height="35" viewBox="0 0 147 35"><path d="m43.46 30.88-2.86-4.85-1.5 1.76v3.09h-2.05V16.12h2.05v9.1l3.96-4.85h2.49L42 24.5l4 6.38h-2.53ZM32.39 31c-2.3 0-4.54-1.45-4.54-5.39 0-3.93 2.25-5.36 4.54-5.36 1.4 0 2.39.41 3.35 1.47l-1.4 1.4c-.65-.72-1.15-.99-1.95-.99-.79 0-1.45.33-1.9.94-.43.57-.6 1.32-.6 2.54 0 1.23.17 2 .6 2.57.45.6 1.11.93 1.9.93.8 0 1.3-.26 1.95-.99l1.4 1.39A4.14 4.14 0 0 1 32.4 31Zm-8.45-4.77h-2.39c-1.2 0-1.83.56-1.83 1.52 0 .95.59 1.49 1.87 1.49.79 0 1.37-.06 1.91-.6.3-.31.44-.81.44-1.56v-.85Zm.04 4.65v-.96c-.74.77-1.44 1.08-2.7 1.08-1.27 0-2.12-.31-2.74-.95a3.28 3.28 0 0 1-.8-2.26c0-1.76 1.18-3.03 3.51-3.03h2.7v-.74c0-1.33-.65-1.97-2.24-1.97-1.12 0-1.66.27-2.23 1.02l-1.34-1.31c.96-1.16 1.97-1.51 3.65-1.51 2.8 0 4.2 1.22 4.2 3.6v7.03h-2Zm-9 0c-1.92 0-2.8-1.41-2.8-2.93v-5.78H11v-1.61h1.17v-3.2h2.05v3.2h1.97v1.61h-1.97v5.68c0 .77.36 1.22 1.12 1.22h.85v1.8h-1.23ZM5.05 31c-2.15 0-3.7-.52-5.06-1.95l1.45-1.47A4.64 4.64 0 0 0 5.1 29c1.87 0 2.96-.83 2.96-2.26 0-.64-.18-1.18-.56-1.53-.37-.35-.73-.5-1.57-.62l-1.69-.25a4.83 4.83 0 0 1-2.71-1.18 3.73 3.73 0 0 1-1.05-2.82C.48 17.76 2.3 16 5.27 16c1.88 0 3.21.5 4.44 1.68l-1.4 1.4a4.12 4.12 0 0 0-3.1-1.13c-1.7 0-2.62 1-2.62 2.3 0 .54.16 1.01.54 1.36.37.34.95.58 1.61.69l1.63.25c1.33.2 2.07.54 2.67 1.1.79.7 1.17 1.76 1.17 3.02 0 2.71-2.15 4.33-5.15 4.33Z" fill="white"></path><path d="M129.55 23.38a1.88 1.88 0 0 0-1.8-1.12c-.92 0-1.52.48-1.81 1.12-.17.39-.23.68-.25 1.15h4.1a2.94 2.94 0 0 0-.24-1.15Zm-3.86 3c0 1.37.85 2.39 2.37 2.39a3 3 0 0 0 2.44-1.02l1.65 1.6a5.16 5.16 0 0 1-4.12 1.69c-2.55 0-5-1.16-5-5.52 0-3.5 1.91-5.49 4.71-5.49 3.02 0 4.72 2.2 4.72 5.14v1.2h-6.77Zm-9.17-3.93c-1.6 0-1.76 1.36-1.76 2.79 0 1.42.16 2.8 1.76 2.8s1.79-1.38 1.79-2.8c0-1.43-.19-2.8-1.79-2.8Zm-.27 12.53c-1.66 0-2.8-.33-3.92-1.4l1.68-1.7c.6.58 1.2.83 2.12.83 1.62 0 2.18-1.14 2.18-2.23v-1.1a3.18 3.18 0 0 1-2.58 1.08 3.6 3.6 0 0 1-2.57-.95c-1.02-1.01-1.1-2.4-1.1-4.27 0-1.88.08-3.25 1.1-4.26.6-.6 1.53-.95 2.6-.95 1.13 0 1.88.31 2.63 1.14v-1.01h2.62v10.36c0 2.58-1.85 4.46-4.76 4.46Zm-8.97-4.07v-6.5c0-1.47-.93-1.96-1.78-1.96s-1.8.5-1.8 1.96v6.5H101V20.16h2.63v.99c.7-.75 1.7-1.12 2.7-1.12a3.5 3.5 0 0 1 2.55.95c.87.87 1.1 1.88 1.1 3.06v6.87h-2.7Zm-11.14-4.54H94c-.98 0-1.52.45-1.52 1.22 0 .74.5 1.24 1.56 1.24.75 0 1.22-.06 1.7-.52.3-.27.4-.7.4-1.36v-.58Zm.06 4.54v-.93c-.73.73-1.41 1.04-2.66 1.04-1.22 0-2.12-.31-2.76-.95-.58-.6-.9-1.47-.9-2.42 0-1.71 1.2-3.12 3.7-3.12h2.56V24c0-1.18-.58-1.7-2.02-1.7-1.04 0-1.51.25-2.07.9l-1.73-1.68c1.06-1.16 2.1-1.49 3.9-1.49 3.04 0 4.62 1.28 4.62 3.8v7.08H96.2Zm-11 0v-6.56c0-1.43-.91-1.9-1.77-1.9-.85 0-1.74.5-1.74 1.9v6.56h-2.7v-14.7h2.7v4.94a3.58 3.58 0 0 1 2.6-1.12c2.36 0 3.6 1.65 3.6 3.93v6.95h-2.7Zm-11.02.13c-2.16 0-4.84-1.16-4.84-5.52 0-4.35 2.68-5.49 4.84-5.49 1.5 0 2.61.46 3.57 1.45l-1.83 1.81c-.56-.6-1.04-.84-1.74-.84-.65 0-1.15.23-1.54.7-.41.52-.6 1.24-.6 2.37 0 1.14.19 1.88.6 2.4.4.47.9.7 1.54.7.7 0 1.18-.25 1.74-.85l1.83 1.8a4.64 4.64 0 0 1-3.57 1.47Zm-8.6-.13L63.6 27.7l-1.98 3.22h-3.24l3.74-5.49-3.59-5.26h3.24l1.83 3.07 1.84-3.07h3.24l-3.59 5.26 3.74 5.5h-3.24Zm-17.58 0v-14.7h9.74v2.56h-6.85v3.45h5.83v2.56H50.9v3.57h6.85v2.56H48Z" fill="white"></path><path d="M147 3h-15v-.5c0-1.3 1.21-2.5 2.5-2.5h10c1.3 0 2.5 1.2 2.5 2.5V3Z" fill="white"></path><path d="M132 12v.5c0 1.3 1.21 2.5 2.5 2.5h6.5v3l3-3h.5c1.3 0 2.5-1.2 2.5-2.5V12h-15Z" fill="white"></path><path d="M132 8v3h15V8h-15Z" fill="white"></path><path d="M132 4v3h15V4h-15Z" fill="white"></path>
-                            </svg>
-                    </div>
-                    <div class="border-[0.5px] w-[140px] mx-auto my-[30px] border-blue-800"></div>
-                    <div class="text-white text-center font-semibold text-[35px]  leading-10">Explore technical topics and other <br> disciplines across 170+ Q&A <br> communities
-                    </div>
-                    <div class="text-white text-center text-[19px] my-6">
-                        From <a href=""><span class="text-blue-300 hover:text-blue-200">Server Fault </span></a> to <a href=""><span class="text-blue-300 hover:text-blue-200">Super User</span></a> , much of the Stack Exchange network continues <br> our mission to empower the world to develop technology through collective <br> knowledge. Other sites on the Stack Exchange network further encourage <br> knowledge sharing across topics such as cooking and medicine.
-                    </div>
-                    <div class=" flex justify-center">
-                            <a href="" class=" " >
-                                <button class=" button hover:bg-orange-500 h-[43px] rounded-md w-[210px]  bg-orange-400 font-medium  ">Explore the network
-                                </button>
-                            </a>
+                        <a href="" class="">
+                            <img src="images/ans.png" alt="answering question image" class="h-[450px] w-[400px]" />
+                        </a>
                     </div>
                 </div>
-                <div>
-                    <svg fill="none" height="330" class="mt-[150px] " viewBox="0 0 270 330" width="270" xmlns="http://www.w3.org/2000/svg"><g fill="#0054a3"><rect height="57.8168" rx="5.10149" width="57.8168" x="172.673" y="177"/><rect height="57.8168" rx="5.10149" width="57.8168" x="32" y="76"/><rect height="37.4109" rx="5.10149" width="37.4109" x="102" y="23"/><rect height="37.4109" rx="5.10149" width="37.4109" x="61" y="254"/><rect height="37.4109" rx="5.10149" width="37.4109" x="134.817" y="108"/><rect height="22.6733" rx="5.10149" width="22.6733" x="116" y="195"/><rect height="22.6733" rx="5.10149" width="22.6733" x="202" y="273"/><rect height="22.6733" rx="5.10149" width="22.6733" x="213" y="82"/></g>
-                    </svg>
+                <div class="mt-[31px] text-center text-[18px] text-gray-400">
+                    <p>Some of the premium features available with paid tiers</p>
                 </div>
             </div>
-        </div>
 
-        <div class="h-[190px] w-full flex   items-center">
-            <div class=" w-full flex justify-center gap-6">
+            <div class="mt-[-60px] flex justify-center gap-6">
+                <div class="h-[160px] w-[220px] rounded-lg bg-gray-300 p-[20px] text-center">
+                    <svg aria-hidden="true" class="mb12 svg-spot spotKey mx-auto mb-3" width="48" fill="#00008B" height="48" viewBox="0 0 48 48">
+                        <path
+                            opacity=".2"
+                            d="m43.05 15.18-22.29 9.35a9.1 9.1 0 0 0-10.87-3 9 9 0 0 0-4.82 11.79 9 9 0 0 0 17.17-5.2l12.28-5.22 1.5 3.57c.2.47.7.68 1.18.48l1.65-.7c.46-.19.67-.7.48-1.16l-1.5-3.58 1.92-.8 2.08 4.94c.2.47.7.68 1.17.48l1.65-.69c.47-.2.68-.7.48-1.17l-2.06-4.9 1.45-.6c.47-.2.67-.7.48-1.18l-.81-1.92a.85.85 0 0 0-1.14-.5ZM15.36 34.86a5.33 5.33 0 1 1-4.14-9.84 5.33 5.33 0 0 1 4.14 9.84Z"></path>
+                        <path
+                            d="M6.82 30.54a5.5 5.5 0 1 0 10.14-4.26 5.5 5.5 0 0 0-10.14 4.26Zm3.72-5.36a3.5 3.5 0 1 1 2.7 6.45 3.5 3.5 0 0 1-2.7-6.45Zm8.74-3.38a10.2 10.2 0 0 0-11.26-2.25 10.06 10.06 0 0 0-5.46 13.14 10.06 10.06 0 0 0 13.2 5.3 10.18 10.18 0 0 0 6.04-10.7l9.66-3.99 1.17 2.78a2 2 0 0 0 2.61 1.07l1.85-.78a2 2 0 0 0 1.07-2.62l-1.2-2.86.63-.27L39.01 24a2 2 0 0 0 2.62 1.07l1.85-.78a2 2 0 0 0 1.07-2.61l-1.47-3.5c.9-.74 1.25-2.02.77-3.15l-.19-.46a2.78 2.78 0 0 0-3.63-1.48l-20.75 8.7Zm-1.12 1.74a1 1 0 0 0 1.23.38l21.41-8.99c.4-.16.85.02 1.02.42l.19.45a.73.73 0 0 1-.37.95 1 1 0 0 0-.75 1.37l1.81 4.33-1.84.77L39.08 19a1 1 0 0 0-.49-.52 1 1 0 0 0-.91-.07l-2.41 1.01a1 1 0 0 0-.55 1.28l.05.14 1.54 3.69-1.84.77-1.55-3.69a1 1 0 0 0-1.3-.53h-.01l-11.3 4.65a1 1 0 0 0-.6 1.16l.02.14A8.2 8.2 0 0 1 15 36.14a8.06 8.06 0 0 1-10.58-4.23A8.06 8.06 0 0 1 8.8 21.4a8.18 8.18 0 0 1 9.36 2.15Z"></path></svg
+                    >Robust read and write <br />
+                    API
+                </div>
+                <div class="h-[160px] w-[225px] rounded-lg bg-gray-300 p-[20px] text-center">
+                    <svg aria-hidden="true" class="mb12 svg-spot spotLock mx-auto mb-3" fill="#00008B" width="48" height="48" viewBox="0 0 48 48">
+                        <path
+                            opacity=".2"
+                            d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"></path>
+                        <path
+                            d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z"></path></svg
+                    >Single sign-on with AD or <br />
+                    SAML
+                </div>
+                <div class="h-[160px] w-[220px] rounded-lg bg-gray-300 p-[20px] text-center">
+                    <svg aria-hidden="true" class="mb12 svg-spot spotPeople mx-auto mb-3" width="48" fill="#00008B" height="48" viewBox="0 0 48 48">
+                        <path
+                            d="M13.5 28a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM7 30a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v5h11v-5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v10a2 2 0 0 1-2 2H33v5a1 1 0 0 1-1 1H20a1 1 0 0 1-1-1v-5H8a1 1 0 0 1-1-1V30Zm25-6.5a4.5 4.5 0 1 0 9 0 4.5 4.5 0 0 0-9 0ZM24.5 34a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z"
+                            opacity=".2"></path>
+                        <path
+                            d="M16.4 26.08A6 6 0 1 0 7.53 26C5.64 26.06 4 27.52 4 29.45V40a1 1 0 0 0 1 1h9a1 1 0 1 0 0-2h-4v-7a1 1 0 1 0-2 0v7H6v-9.55c0-.73.67-1.45 1.64-1.45H16a1 1 0 0 0 .4-1.92ZM12 18a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm16.47 14a6 6 0 1 0-8.94 0A3.6 3.6 0 0 0 16 35.5V46a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V35.5c0-1.94-1.64-3.42-3.53-3.5ZM20 28a4 4 0 1 1 8 0 4 4 0 0 1-8 0Zm-.3 6h8.6c1 0 1.7.75 1.7 1.5V45h-2v-7a1 1 0 1 0-2 0v7h-4v-7a1 1 0 1 0-2 0v7h-2v-9.5c0-.75.7-1.5 1.7-1.5ZM42 22c0 1.54-.58 2.94-1.53 4A3.5 3.5 0 0 1 44 29.45V40a1 1 0 0 1-1 1h-9a1 1 0 1 1 0-2h4v-7a1 1 0 1 1 2 0v7h2v-9.55A1.5 1.5 0 0 0 40.48 28H32a1 1 0 0 1-.4-1.92A6 6 0 1 1 42 22Zm-2 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"></path>
+                        <g opacity=".35">
+                            <path
+                                d="M17 10a1 1 0 011-1h12a1 1 0 110 2H18a1 1 0 01-1-1Zm1-5a1 1 0 100 2h12a1 1 0 100-2H18ZM14 1a1 1 0 00-1 1v12a1 1 0 001 1h5.09l4.2 4.2a1 1 0 001.46-.04l3.7-4.16H34a1 1 0 001-1V2a1 1 0 00-1-1H14Zm1 12V3h18v10h-5a1 1 0 00-.75.34l-3.3 3.7-3.74-3.75a1 1 0 00-.71-.29H15Z"></path>
+                        </g></svg
+                    >Your own customer <br />
+                    success representative
+                </div>
+                <div class="h-[160px] w-[220px] rounded-lg bg-gray-300 p-[20px] text-center">
+                    <svg aria-hidden="true" class="mb12 svg-spot spotHeadset mx-auto mb-3" width="48" height="48" fill="#00008B" viewBox="0 0 48 48">
+                        <path
+                            d="M33.8 7.06a19.9 19.9 0 0 0-8.42-2.4 19.57 19.57 0 0 0-8.57 1.62c-.2.14-.25.37-.12.6l2.25 3.97c.12.19.4.34.65.34a.7.7 0 0 0 .17-.03c.53-.12 3.52-.8 5.4-.72 1.9.09 4.89 1.07 5.32 1.22l.11.03c.23.03.52-.05.66-.28l2.61-3.74c.14-.22.12-.46-.07-.61ZM8 39.52c0 2.24 1.8 4.06 4 4.06 1.11 0 2.04-.93 2.04-2v-9.53c0-1.12-.93-2.05-2.03-2.05A4.04 4.04 0 0 0 8 34.06v5.46Zm32.03 4.06c2.2 0 4-1.82 4-4.06v-5.46c0-2.24-1.8-4.06-4-4.06-1.1 0-2.03.93-2.03 2.05v9.52c0 1.08.92 2 2.03 2ZM23 48h4a2 2 0 0 0 0-4h-4a2 2 0 0 0 0 4Z"
+                            opacity=".2"></path>
+                        <path
+                            d="M13.66 5.54C8.04 8.6 4 14.24 4 21v12h1v-1.11A4.94 4.94 0 0 1 9.98 27 3 3 0 0 1 13 29.97v9.1A3 3 0 0 1 9.98 42a4.97 4.97 0 0 1-4.9-4H3.33C1.93 38 1 36.77 1 35.5c0-.8.37-1.59 1-2.06V21C2 9.34 12.57 1 23.5 1S45 9.34 45 21v11.44c.63.47 1 1.26 1 2.06 0 1.27-.94 2.5-2.33 2.5H42v.11a4.89 4.89 0 0 1-3.07 4.52A1 1 0 0 1 39 42a2.88 2.88 0 0 1-3 3h-8.17A3 3 0 0 1 25 47h-4a3 3 0 0 1 0-6h4a3 3 0 0 1 2.83 2H36c.46 0 .66-.16.78-.3.14-.2.22-.46.22-.7a3 3 0 0 1-3-2.92v-9.11A3 3 0 0 1 37.02 27 4.94 4.94 0 0 1 42 31.89V32h1V21c0-6.51-3.75-11.97-9.04-15.1a1 1 0 0 1-.03.05l-1.16 1.68c2.42 1.57 4.44 3.1 5.87 5.16C40.22 15.1 41 17.93 41 22a1 1 0 1 1-2 0c0-3.8-.72-6.2-2.01-8.07-1.2-1.74-2.96-3.1-5.36-4.66l-.71 1.04a1 1 0 0 1-1.17.37c-1.83-.68-3.7-.94-5.82-.94-2.1 0-4 .3-5.84.94a1 1 0 0 1-1.15-.38l-.98-1.41c-2.7 1.73-4.65 3.16-5.95 5.04C8.72 15.8 8 18.2 8 22a1 1 0 1 1-2 0c0-4.07.78-6.91 2.36-9.2 1.54-2.23 3.78-3.84 6.47-5.56l-1.15-1.67a1 1 0 0 1-.02-.03Zm1.82-.89 2.68 3.9a19.7 19.7 0 0 1 5.77-.81c2.03 0 3.91.22 5.77.8l2.49-3.59A20.53 20.53 0 0 0 23.5 3c-2.79 0-5.52.59-8.02 1.65ZM25 43h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2ZM7 31.89v5.22A2.94 2.94 0 0 0 9.98 40c.59 0 1.02-.48 1.02-.92v-9.11A1 1 0 0 0 9.98 29 2.94 2.94 0 0 0 7 31.89ZM5 35H3.33c-.05 0-.12.02-.2.1a.6.6 0 0 0-.13.4c0 .17.06.31.14.4.07.08.14.1.2.1H5v-1Zm35-3.11A2.94 2.94 0 0 0 37.02 29a1 1 0 0 0-1.02.97v9.1c0 .45.43.93 1.02.93A2.94 2.94 0 0 0 40 37.11V31.9ZM42 35h1.67c.05 0 .12-.02.2-.1a.6.6 0 0 0 .13-.4.6.6 0 0 0-.14-.4c-.07-.08-.14-.1-.2-.1H42v1Z"></path></svg
+                    >99.5% uptime SLA and <br />
+                    priority support
+                </div>
+            </div>
+
+            <div class="mx-[89px] mt-[100px] flex gap-12 text-gray-600">
+                <div class="">
+                    <div class="bg-[#F8F9F9]">
+                        <img src="images/comablue.png" alt="" class="ml-[-25px]" />
+                    </div>
+                    <p class="text-justify">
+                        Stack Overflow for Teams has been a <br />
+                        resource for our entire company. Not <br />
+                        only for developers to solve problems,<br />
+                        it's also enabled our sales field to <br />
+                        answer technical questions that help<br />
+                        them close deals.
+                    </p>
+                    <div class="mt-[25px] mb-[15px] w-[250px] border-[0.5px]"></div>
+                    <span class="font-bold">Director of Product Management <br /></span>
+                    <span>Microsoft</span>
+                </div>
                 <div>
-                    <svg aria-hidden="true" class="b ml-[50px]" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"></path><path d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z"></path></svg>
+                    <div class="bg-[#F8F9F9]">
+                        <img src="images/comablue.png" alt="" class="ml-[-25px]" />
+                    </div>
+                    <p class="text-justify">
+                        Engineers should help solve the hardest <br />
+                        questions, the unknowns, where being <br />
+                        familiar with how the product was built <br />
+                        is essential. But we don't want to keep <br />
+                        answering solved problems over and <br />
+                        over again. That's where Stack Overflow <br />
+                        for Teams really helps.
+                    </p>
+                    <div class="mt-[25px] mb-[15px] w-[180px] border-[0.5px]"></div>
+                    <span class="font-bold">Director of Engineering<br /></span>
+                    <span> Elastic Cloud</span>
                 </div>
-                <div class=" pt-[8px]">
-                    <p class="" >
-                         Build a <span class="font-semibold">private community</span>  to share technical or non-technical knowledge.
-                     </p>
+                <div>
+                    <div class="bg-[#F8F9F9]">
+                        <img src="images/comablue.png" alt="" class="ml-[-25px]" />
+                    </div>
+                    <p class="text-justify">
+                        As we started to use [Stack Overflow for<br />
+                        Teams] and saw how nice it was to have <br />
+                        a repository of information, we started<br />
+                        to see it spread to other teams. Our <br />
+                        customer support team started using it ,<br />
+                        our people success team started using<br />
+                        it, next thing we knew, we had [Slack]<br />
+                        integrations all over the place.
+                    </p>
+                    <div class="mt-[25px] mb-[15px] w-[90px] border-[0.5px]"></div>
+                    <span class="font-bold">Engineering<br /></span>
+                    <span>Expensify</span>
                 </div>
-                <div class=" flex justify-center">
-                    <a href="" class=" " >
-                                <button class=" button hover:bg-blue-50 h-[43px] rounded-md w-[210px]  border-2 border-blue-300 font-medium text-blue-600 ">Create a free Team
-                                </button>
+                <div>
+                    <div class="bg-[#F8F9F9]">
+                        <img src="images/comablue.png" alt="" class="ml-[-25px]" />
+                    </div>
+                    <p class="text-justify text-[19px]">
+                        What we love about Stack Overflow <br />
+                        for Teams is that it's a very dynamic <br />
+                        tool…there's just so many ways to <br />
+                        use this as a liaison between <br />
+                        different teams and different <br />
+                        knowledge bases.
+                    </p>
+                    <div class="mt-[25px] mb-[15px] w-[138px] border-[0.5px]"></div>
+                    <span class="font-bold">Software Engineer<br /></span>
+                    <span>Box</span>
+                </div>
+            </div>
+
+            <div class="mt-[90px] flex h-[800px] w-full justify-between">
+                <div>
+                    <img src="images/bgleft.png" alt="" class="h-[400px] pt-[30px]" />
+                </div>
+                <div class="flex flex-col items-center gap-9 pt-[30px]">
+                    <div>
+                        <img src="images/logo1.png" alt="" />
+                    </div>
+                    <div class="w-[190px] border-[0.5px] border-gray-200"></div>
+                    <div>
+                        <p class="text-center text-[30px]">
+                            Additional products that reach and engage <br />
+                            developers & technologists…
+                        </p>
+                    </div>
+                    <div class="flex gap-5">
+                        <a href="" class="hover:shadow-sm hover:shadow-gray-300">
+                            <div class="h-[170px] w-[380px] rounded-lg border-2 bg-white">
+                                <div class="flex justify-center">
+                                    <img src="images/logo2.png" alt="" class="ml-[-19px] mt-[14px] h-[50px]" />
+                                    <span class="mt-[14px] py-[13px] text-[17px] font-extrabold"><span class="font-light text-gray-400">|</span> ADVERTISING</span>
+                                </div>
+                                <div>
+                                    <p class="mt-2 text-center text-[18px] text-gray-600">
+                                        Reach the world's largest audience of <br />
+                                        developers and technologists
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="hover:shadow-sm hover:shadow-gray-300">
+                            <div class="h-[170px] w-[380px] rounded-lg border-2 bg-white">
+                                <div class="flex justify-center">
+                                    <img src="images/logo2.png" alt="" class="mt-[14px] ml-[-19px] h-[50px]" />
+                                    <span class="mt-4 py-[13px] text-[17px] font-extrabold"><span class="font-light text-gray-400">|</span> COLLECTIVES</span>
+                                </div>
+                                <div>
+                                    <p class="mt-2 text-center text-[18px] text-gray-600">
+                                        Connecting communities with the specific <br />
+                                        technologies they use the most
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="" class="hover:shadow-sm hover:shadow-gray-300">
+                        <div class="h-[140px] w-[380px] rounded-lg border-2 bg-white">
+                            <div class="flex justify-center">
+                                <img src="images/logo2.png" alt="" class="mt-[10px] h-[50px]" />
+                                <span class="mt-3 py-[13px] text-[17px] font-extrabold"><span class="font-light text-gray-400">|</span> TALENT</span>
+                            </div>
+                            <div>
+                                <p class="mt-2 pl-[40px] text-center text-[18px] text-gray-600">Build your employer brand</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div>
+                        <div class="button">
+                            <a href="" class="w-[210px]">
+                                <button class="button ml-10 h-[43px] w-[210px] rounded-md bg-orange-500 font-medium text-white hover:bg-orange-700">About the company</button>
+                            </a>
+                        </div>
+                        <a href="" class="">
+                            <p class="ml-[-9px] h-[45px] w-[300px] rounded-md pt-2 text-center text-sm font-semibold text-gray-400 hover:bg-gray-200">
+                                Want to work here?
+                                <span class="font-semibold text-blue-700">Current job openings</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/bgright.png" alt="" class="h-[400px] pt-[46px]" />
+                </div>
+            </div>
+
+            <div class="created-clipm2 mx-[51px] h-[680px] w-[1375px] rounded-xl bg-[#000080]">
+                <div class="flex justify-around">
+                    <div>
+                        <svg fill="none" class="mt-[150px]" height="330" viewBox="0 0 270 330" width="270" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#0054a3">
+                                <rect height="57.8168" rx="5.10149" width="57.8168" x="172.673" y="177" />
+                                <rect height="57.8168" rx="5.10149" width="57.8168" x="32" y="76" />
+                                <rect height="37.4109" rx="5.10149" width="37.4109" x="102" y="23" />
+                                <rect height="37.4109" rx="5.10149" width="37.4109" x="61" y="254" />
+                                <rect height="37.4109" rx="5.10149" width="37.4109" x="134.817" y="108" />
+                                <rect height="22.6733" rx="5.10149" width="22.6733" x="116" y="195" />
+                                <rect height="22.6733" rx="5.10149" width="22.6733" x="202" y="273" />
+                                <rect height="22.6733" rx="5.10149" width="22.6733" x="213" y="82" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="mt-[150px] h-[430px]  w-[700px] flex-col">
+                        <div>
+                            <svg aria-hidden="true" class="mx-auto" width="147" height="35" viewBox="0 0 147 35">
+                                <path
+                                    d="m43.46 30.88-2.86-4.85-1.5 1.76v3.09h-2.05V16.12h2.05v9.1l3.96-4.85h2.49L42 24.5l4 6.38h-2.53ZM32.39 31c-2.3 0-4.54-1.45-4.54-5.39 0-3.93 2.25-5.36 4.54-5.36 1.4 0 2.39.41 3.35 1.47l-1.4 1.4c-.65-.72-1.15-.99-1.95-.99-.79 0-1.45.33-1.9.94-.43.57-.6 1.32-.6 2.54 0 1.23.17 2 .6 2.57.45.6 1.11.93 1.9.93.8 0 1.3-.26 1.95-.99l1.4 1.39A4.14 4.14 0 0 1 32.4 31Zm-8.45-4.77h-2.39c-1.2 0-1.83.56-1.83 1.52 0 .95.59 1.49 1.87 1.49.79 0 1.37-.06 1.91-.6.3-.31.44-.81.44-1.56v-.85Zm.04 4.65v-.96c-.74.77-1.44 1.08-2.7 1.08-1.27 0-2.12-.31-2.74-.95a3.28 3.28 0 0 1-.8-2.26c0-1.76 1.18-3.03 3.51-3.03h2.7v-.74c0-1.33-.65-1.97-2.24-1.97-1.12 0-1.66.27-2.23 1.02l-1.34-1.31c.96-1.16 1.97-1.51 3.65-1.51 2.8 0 4.2 1.22 4.2 3.6v7.03h-2Zm-9 0c-1.92 0-2.8-1.41-2.8-2.93v-5.78H11v-1.61h1.17v-3.2h2.05v3.2h1.97v1.61h-1.97v5.68c0 .77.36 1.22 1.12 1.22h.85v1.8h-1.23ZM5.05 31c-2.15 0-3.7-.52-5.06-1.95l1.45-1.47A4.64 4.64 0 0 0 5.1 29c1.87 0 2.96-.83 2.96-2.26 0-.64-.18-1.18-.56-1.53-.37-.35-.73-.5-1.57-.62l-1.69-.25a4.83 4.83 0 0 1-2.71-1.18 3.73 3.73 0 0 1-1.05-2.82C.48 17.76 2.3 16 5.27 16c1.88 0 3.21.5 4.44 1.68l-1.4 1.4a4.12 4.12 0 0 0-3.1-1.13c-1.7 0-2.62 1-2.62 2.3 0 .54.16 1.01.54 1.36.37.34.95.58 1.61.69l1.63.25c1.33.2 2.07.54 2.67 1.1.79.7 1.17 1.76 1.17 3.02 0 2.71-2.15 4.33-5.15 4.33Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M129.55 23.38a1.88 1.88 0 0 0-1.8-1.12c-.92 0-1.52.48-1.81 1.12-.17.39-.23.68-.25 1.15h4.1a2.94 2.94 0 0 0-.24-1.15Zm-3.86 3c0 1.37.85 2.39 2.37 2.39a3 3 0 0 0 2.44-1.02l1.65 1.6a5.16 5.16 0 0 1-4.12 1.69c-2.55 0-5-1.16-5-5.52 0-3.5 1.91-5.49 4.71-5.49 3.02 0 4.72 2.2 4.72 5.14v1.2h-6.77Zm-9.17-3.93c-1.6 0-1.76 1.36-1.76 2.79 0 1.42.16 2.8 1.76 2.8s1.79-1.38 1.79-2.8c0-1.43-.19-2.8-1.79-2.8Zm-.27 12.53c-1.66 0-2.8-.33-3.92-1.4l1.68-1.7c.6.58 1.2.83 2.12.83 1.62 0 2.18-1.14 2.18-2.23v-1.1a3.18 3.18 0 0 1-2.58 1.08 3.6 3.6 0 0 1-2.57-.95c-1.02-1.01-1.1-2.4-1.1-4.27 0-1.88.08-3.25 1.1-4.26.6-.6 1.53-.95 2.6-.95 1.13 0 1.88.31 2.63 1.14v-1.01h2.62v10.36c0 2.58-1.85 4.46-4.76 4.46Zm-8.97-4.07v-6.5c0-1.47-.93-1.96-1.78-1.96s-1.8.5-1.8 1.96v6.5H101V20.16h2.63v.99c.7-.75 1.7-1.12 2.7-1.12a3.5 3.5 0 0 1 2.55.95c.87.87 1.1 1.88 1.1 3.06v6.87h-2.7Zm-11.14-4.54H94c-.98 0-1.52.45-1.52 1.22 0 .74.5 1.24 1.56 1.24.75 0 1.22-.06 1.7-.52.3-.27.4-.7.4-1.36v-.58Zm.06 4.54v-.93c-.73.73-1.41 1.04-2.66 1.04-1.22 0-2.12-.31-2.76-.95-.58-.6-.9-1.47-.9-2.42 0-1.71 1.2-3.12 3.7-3.12h2.56V24c0-1.18-.58-1.7-2.02-1.7-1.04 0-1.51.25-2.07.9l-1.73-1.68c1.06-1.16 2.1-1.49 3.9-1.49 3.04 0 4.62 1.28 4.62 3.8v7.08H96.2Zm-11 0v-6.56c0-1.43-.91-1.9-1.77-1.9-.85 0-1.74.5-1.74 1.9v6.56h-2.7v-14.7h2.7v4.94a3.58 3.58 0 0 1 2.6-1.12c2.36 0 3.6 1.65 3.6 3.93v6.95h-2.7Zm-11.02.13c-2.16 0-4.84-1.16-4.84-5.52 0-4.35 2.68-5.49 4.84-5.49 1.5 0 2.61.46 3.57 1.45l-1.83 1.81c-.56-.6-1.04-.84-1.74-.84-.65 0-1.15.23-1.54.7-.41.52-.6 1.24-.6 2.37 0 1.14.19 1.88.6 2.4.4.47.9.7 1.54.7.7 0 1.18-.25 1.74-.85l1.83 1.8a4.64 4.64 0 0 1-3.57 1.47Zm-8.6-.13L63.6 27.7l-1.98 3.22h-3.24l3.74-5.49-3.59-5.26h3.24l1.83 3.07 1.84-3.07h3.24l-3.59 5.26 3.74 5.5h-3.24Zm-17.58 0v-14.7h9.74v2.56h-6.85v3.45h5.83v2.56H50.9v3.57h6.85v2.56H48Z"
+                                    fill="white"></path>
+                                <path d="M147 3h-15v-.5c0-1.3 1.21-2.5 2.5-2.5h10c1.3 0 2.5 1.2 2.5 2.5V3Z" fill="white"></path>
+                                <path d="M132 12v.5c0 1.3 1.21 2.5 2.5 2.5h6.5v3l3-3h.5c1.3 0 2.5-1.2 2.5-2.5V12h-15Z" fill="white"></path>
+                                <path d="M132 8v3h15V8h-15Z" fill="white"></path>
+                                <path d="M132 4v3h15V4h-15Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <div class="mx-auto my-[30px] w-[140px] border-[0.5px] border-blue-800"></div>
+                        <div class="text-center text-[35px] font-semibold leading-10 text-white">
+                            Explore technical topics and other <br />
+                            disciplines across 170+ Q&A <br />
+                            communities
+                        </div>
+                        <div class="my-6 text-center text-[19px] text-white">
+                            From
+                            <a href=""><span class="text-blue-300 hover:text-blue-200">Server Fault </span></a>
+                            to
+                            <a href=""><span class="text-blue-300 hover:text-blue-200">Super User</span></a>
+                            , much of the Stack Exchange network continues <br />
+                            our mission to empower the world to develop technology through collective <br />
+                            knowledge. Other sites on the Stack Exchange network further encourage <br />
+                            knowledge sharing across topics such as cooking and medicine.
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="" class=" ">
+                                <button class="button h-[43px] w-[210px] rounded-md bg-orange-400 font-medium hover:bg-orange-500">Explore the network</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <svg fill="none" height="330" class="mt-[150px]" viewBox="0 0 270 330" width="270" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#0054a3">
+                                <rect height="57.8168" rx="5.10149" width="57.8168" x="172.673" y="177" />
+                                <rect height="57.8168" rx="5.10149" width="57.8168" x="32" y="76" />
+                                <rect height="37.4109" rx="5.10149" width="37.4109" x="102" y="23" />
+                                <rect height="37.4109" rx="5.10149" width="37.4109" x="61" y="254" />
+                                <rect height="37.4109" rx="5.10149" width="37.4109" x="134.817" y="108" />
+                                <rect height="22.6733" rx="5.10149" width="22.6733" x="116" y="195" />
+                                <rect height="22.6733" rx="5.10149" width="22.6733" x="202" y="273" />
+                                <rect height="22.6733" rx="5.10149" width="22.6733" x="213" y="82" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex h-[190px] w-full items-center">
+                <div class="flex w-full justify-center gap-6">
+                    <div>
+                        <svg aria-hidden="true" class="b ml-[50px]" width="48" height="48" viewBox="0 0 48 48">
+                            <path
+                                opacity=".2"
+                                d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"></path>
+                            <path
+                                d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z"></path>
+                        </svg>
+                    </div>
+                    <div class="pt-[8px]">
+                        <p class="">Build a <span class="font-semibold">private community</span> to share technical or non-technical knowledge.</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="" class=" ">
+                            <button class="button h-[43px] w-[210px] rounded-md border-2 border-blue-300 font-medium text-blue-600 hover:bg-blue-50">Create a free Team</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="flex h-[380px] bg-gray-800">
+                <div class="ml-[115px] h-full w-[40px]">
+                    <a href="" class="">
+                        <svg aria-hidden="true" class="mt-[32px]" width="32" height="37" viewBox="0 0 32 37">
+                            <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path>
+                            <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"></path>
+                        </svg>
                     </a>
                 </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-         <div class="bg-gray-800 h-[380px] flex ">
-            <div class="w-[40px] h-full border-2  ml-[115px] ">
-                <a href="" class="">
-                    <svg aria-hidden="true" class="border-2 mt-[32px] " width="32" height="37" viewBox="0 0 32 37"><path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path><path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"></path>
-                    </svg>
-                </a>
-            </div>
-            <div class=" h-full ml-[30px]  ">
-                <ul class=" list-none mt-[32px] leading-7 ">
-                    <li class="text-[14px] font-bold text-gray-300 mb-3"><a href="">STACK OVERFLOW</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300 "><a href="">Questions</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Help</a></li>
-                </ul>
-            </div>
-            <div class=" h-full ml-[80px] ">
-                <ul class=" list-none mt-[32px] leading-7">
-                    <li class="text-[14px] font-bold text-gray-300 mb-3"><a href="">PRODUCTS</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300 "><a href="">Teams</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Advertising</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Collectives</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Talent</a></li>
-                </ul>
-            </div>
-            <div class=" h-full   ml-[100px]">
-                <ul class=" list-none mt-[32px] leading-7 ">
-                    <li class="text-[14px] font-bold text-gray-300 mb-3"><a href="">COMPANY</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300 "><a href="">About</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Press</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Work Here</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Legal</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Privacy Policy</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Terms of Service</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Contact Us</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Cookie Settings</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Cookie Policy</a></li>
-                </ul>
-            </div>
-            <div class=" h-full   ml-[91px] ">
-                <ul class=" list-none mt-[32px] leading-7">
-                    <li class="text-[14px] font-bold text-gray-300 mb-3"><a href="">STACK EXCHANGE NETWORK</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300 "><a href="">Technologyt</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Culture & recreation</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Life & arts</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Science</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Professional</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Business</a></li><br>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">API</a></li>
-                    <li class="text-gray-400 text-[14px] hover:text-gray-300"><a href="">Data</a></li>
-                </ul>
-            </div>
-            <div class=" h-full ml-[80px]  text-gray-400 text-[11px]">
-                <div class="flex gap-3  mt-[32px] ">
-                    <div class="hover:text-gray-300"><a href="">Blog</a></div>
-                    <div class="hover:text-gray-300"><a href="">Facebook</a></div>
-                    <div class="hover:text-gray-300"><a href="">Twitter</a></div>
-                    <div class="hover:text-gray-300"><a href="">LinkedIn</a></div>
-                    <div class="hover:text-gray-300"><a href="">Instagram</a></div>
+                <div class="ml-[30px] h-full">
+                    <ul class="mt-[32px] list-none leading-7">
+                        <li class="mb-3 text-[14px] font-bold text-gray-300">
+                            <a href="">STACK OVERFLOW</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Questions</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Help</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class=" mt-[250px]">
-                    <p>Site design / logo © 2022 Stack Exchange Inc; user contributions <br>
-                        licensed under <ins><a href="">CC BY-SA</a></ins> . rev 2022.12.12.43112</p>
+                <div class="ml-[80px] h-full">
+                    <ul class="mt-[32px] list-none leading-7">
+                        <li class="mb-3 text-[14px] font-bold text-gray-300">
+                            <a href="">PRODUCTS</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Teams</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Advertising</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Collectives</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Talent</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ml-[100px] h-full">
+                    <ul class="mt-[32px] list-none leading-7">
+                        <li class="mb-3 text-[14px] font-bold text-gray-300">
+                            <a href="">COMPANY</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">About</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Press</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Work Here</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Legal</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Terms of Service</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Contact Us</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Cookie Settings</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ml-[91px] h-full">
+                    <ul class="mt-[32px] list-none leading-7">
+                        <li class="mb-3 text-[14px] font-bold text-gray-300">
+                            <a href="">STACK EXCHANGE NETWORK</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Technologyt</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Culture & recreation</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Life & arts</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Science</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Professional</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Business</a>
+                        </li>
+                        <br />
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">API</a>
+                        </li>
+                        <li class="text-[14px] text-gray-400 hover:text-gray-300">
+                            <a href="">Data</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ml-[80px] h-full text-[11px] text-gray-400">
+                    <div class="mt-[32px] flex gap-3">
+                        <div class="hover:text-gray-300"><a href="">Blog</a></div>
+                        <div class="hover:text-gray-300"><a href="">Facebook</a></div>
+                        <div class="hover:text-gray-300"><a href="">Twitter</a></div>
+                        <div class="hover:text-gray-300"><a href="">LinkedIn</a></div>
+                        <div class="hover:text-gray-300"><a href="">Instagram</a></div>
+                    </div>
+                    <div class="mt-[250px]">
+                        <p>
+                            Site design / logo © 2022 Stack Exchange Inc; user contributions
+                            <br />
+                            licensed under <ins><a href="">CC BY-SA</a></ins> . rev 2022.12.12.43112
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
