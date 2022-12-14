@@ -2,25 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 .created-clipm {
-  clip-path: path(
-    "M 1,4 L 1376,4 L 1376,1057 C 913,872 220,951 1,1057 L 1,4 Z"
-  );
+    clip-path: path("M 1,4 L 1376,4 L 1376,1057 C 913,872 220,951 1,1057 L 1,4 Z");
 }
 .created-clipm2 {
-  clip-path: path('M -2,1 C 250,69 684,145 1376,0 L 1378,677 L 1,677 L -2,1 Z')
+    clip-path: path("M -2,1 C 250,69 684,145 1376,0 L 1378,677 L 1,677 L -2,1 Z");
 }
 
 .created-clip1 {
-  clip-path: polygon(84% 71%, 96% 65%, 96% 92%, 94% 93%, 93% 93%, 75% 71%);
-  height: 320px;
-  background-color: #fee3cd;
-  z-index: 10;
-  width: 450px;
+    clip-path: polygon(84% 71%, 96% 65%, 96% 92%, 94% 93%, 93% 93%, 75% 71%);
+    height: 320px;
+    background-color: #fee3cd;
+    z-index: 10;
+    width: 450px;
 }
 .created-clip2 {
-  clip-path: polygon(15% 72%, 1.8% 64%, 2% 93%, 5% 93%, 7% 90%, 18% 74%);
-  height: 320px;
-  background-color: #cde9fe;
-  z-index: 10;
-  width: 450px;
+    clip-path: polygon(15% 72%, 1.8% 64%, 2% 93%, 5% 93%, 7% 90%, 18% 74%);
+    height: 320px;
+    background-color: #cde9fe;
+    z-index: 10;
+    width: 450px;
+}
+
+.animate::before {
+    content: "";
+    animation: animate 8s infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes animate {
+    0% {
+        content: "developer";
+    }
+
+    20% {
+        content: "data scientist";
+    }
+
+    40% {
+        content: "system admin";
+    }
+
+    60% {
+        content: "mobile developer";
+    }
+
+    80% {
+        content: "game developer";
+    }
+
+    100% {
+        content: "developer";
+    }
 }
